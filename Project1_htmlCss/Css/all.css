@@ -53,16 +53,25 @@ table {
 
 .mainPage{
     position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 10vh;
-    right: 10vw;
+    /* width: 50px;*/
+    bottom: 5vh;
+    right: 5vw;
     background-color: #00CC99;
-    filter: opacity(50%);
+    filter: opacity(30%);
+    justify-content: center;
     text-align: center;
     align-items: center;
-
+    border-radius: 50%;
 }
+
+.mainPage a{
+  padding: 20px;
+}
+
+.mainPage:hover{
+  filter: opacity(100%);
+}
+
 :root{
     --smallScreen: 80vw;
     --largeScreen: 60vw;
