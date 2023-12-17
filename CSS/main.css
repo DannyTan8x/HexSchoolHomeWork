@@ -51,25 +51,38 @@ table {
 /* Css reset ^ */
 
 .mainPage{
-    position: fixed;
-    /* width: 50px;*/
-    bottom: 5vh;
-    right: 5vw;
+    position:sticky;
+    top: 0;
     background-color: #00CC99;
     filter: opacity(30%);
     justify-content: center;
     text-align: center;
     align-items: center;
-    border-radius: 50%;
 }
 
 .mainPage a{
   padding: 20px;
+  border-bottom: 5px solid #000;
+  border-right: 1px solid #000;
+  border-radius: 0 0 30px 0;
 }
 
 .mainPage:hover{
   filter: opacity(100%);
 }
+.mainPage a:hover{
+  box-shadow: 1px 2px 5px grey;
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+}
+
+.mainPage a:focus{
+  -webkit-transform: translateY(3px);
+  transform: translateY(1px);
+  -o-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+}
+
 /* Github main Page ^  */
 
 :root{
@@ -110,7 +123,6 @@ table {
     width: var(--largeScreen);
     margin: auto;
 }
-
 .bg-gray{
     background-color: #F6F6F8;
   }

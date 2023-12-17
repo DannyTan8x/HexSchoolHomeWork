@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $('button').click(function (e) { 
+    $('.button').click(function (e) { 
         e.preventDefault();
-        // $('h1').hide();
-        $('h1').toggle();
+
+        // $('.text').toggle();
+        $('.text').fadeToggle();
     });
 })
