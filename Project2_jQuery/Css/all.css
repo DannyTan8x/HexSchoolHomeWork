@@ -1,3 +1,48 @@
+
+.top{
+  width: 40px;
+  height:40px;
+  background-color: #00CC99;
+  position: fixed;
+  bottom: 3vh;
+  right: 15vw;
+  font-size: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 20%;
+}
+
+.top:hover{
+  width: 120px;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 80%;
+  background-image: radial-gradient(circle, #F6F6F8 20%,  #00CC99 100%);
+  box-shadow: 1px 1px 12px grey;
+}
+
+.top:hover i::after{
+  content: " Go top";
+  opacity: 0;
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  transition: opacity 1.5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
 .container{
   width: var(--largeScreen);
   margin: auto;
@@ -85,14 +130,26 @@ header ul li a:hover::before{
   transform: scaleX(120%);
 }
 
+.swiper {
+  /* width: 600px; */
+  height: 300px;
+}
 
 .banner{
-/*   height: 390px; */
-  background-image: url(../image/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.banPic1{
+  background-image: url(../image/banner.png);
+}
+.banPic2{
+  background-image: url(../image/banner2.jpg);
+}
+.banPic3{
+  background-image: url(../image/banner3.jpg);
 }
 
 .banner .container h1{
@@ -115,6 +172,10 @@ header ul li a:hover::before{
   background-color: #FFFFFF26;
 }
 
+.swiper-button-prev, .swiper-button-next{
+  color:#00CC99 !important;
+}
+
 article{
   margin-top: 40px;
   display:flex;
@@ -131,7 +192,8 @@ article{
   box-shadow: 1px 2px 4px grey;
   padding: 20px;
   transition: all 0.3s;
-  cursor:default ;
+  display: flex;
+  /* cursor:default ; */
 }
 
 .curse:hover{
@@ -292,6 +354,7 @@ footer li a{
   }
   
   .curse{
+
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 1em;
