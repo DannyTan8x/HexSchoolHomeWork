@@ -3,6 +3,14 @@
   filter: opacity(100%);
 }
 
+.homeMenu:hover #showMenu{
+  display: none;
+}
+
+.homeMenu:hover #hideMenu{
+  display: block;
+}
+
 .container{
   width: var(--largeScreen);
   margin: auto;

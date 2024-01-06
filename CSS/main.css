@@ -57,7 +57,7 @@ table {
 .homeMenu{
     position: fixed;
     display: flex;
-    width: 130px;
+    /* width: 150px; */
     height: 26px;
     align-items: center;
     background-color: #00CC99;
@@ -72,11 +72,17 @@ table {
 
 .dropDown{
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
 }
 
+.dropDown > a{
+  display: block;
+  padding: 0 10px;
+}
+
 .childMenu{
-  padding: 0 15px;
+  margin: 0 25px;
 }
 
 /* Github main Page ^  */
