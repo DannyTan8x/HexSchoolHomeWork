@@ -1,3 +1,8 @@
+.homeMenu:hover{
+  transform: translateX(0%);
+  filter: opacity(100%);
+}
+
 .container{
   width: var(--largeScreen);
   margin: auto;

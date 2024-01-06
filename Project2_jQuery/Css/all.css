@@ -1,4 +1,6 @@
-
+.homeMenu:hover{
+  filter: opacity(100%);
+}
 .top{
   width: 40px;
   height:40px;
