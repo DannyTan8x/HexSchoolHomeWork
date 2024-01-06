@@ -19,6 +19,7 @@ $(document).ready(function(){
         // event.preventDefault();
             $(this).addClass('active').parent().siblings().find('.menu').removeClass('active');
       });
+      
 
       $('#showMenu').click(function(event){
         event.preventDefault();
