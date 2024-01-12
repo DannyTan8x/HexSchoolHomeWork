@@ -442,6 +442,13 @@ footer li a{
   width: 100%;
   margin-bottom: 1em;
 }
+.lightbox{
+  top: 30vh !important;
+  bottom: 0;
+  right: 0;
+  /* position: absolute !important; */
+  display: block;
+}
 
   .curse img{
   max-width: 30vw;
@@ -521,13 +528,7 @@ footer a.logo{
   .curse ul{
       display: block;
   }
-  .lightbox{
-    top: 30vh !important;
-    bottom: 0;
-    right: 0;
-    /* position: absolute !important; */
-    display: block;
-  }
+  
   .banner h1{
     font-size: 1.5em;
   }
