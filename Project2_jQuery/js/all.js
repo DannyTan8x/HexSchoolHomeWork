@@ -16,10 +16,11 @@ $(document).ready(function(){
 
 
 
+
       $('.menu').click(function(event){
         // event.preventDefault();
             $(this).addClass('active').siblings().removeClass('active');
-            // $(this).find('.dropdown').toggleClass('active');
+            $(this).find('.dropdown').toggleClass('active');
             $(this).siblings().find('.dropdown').removeClass('active');
       });
       

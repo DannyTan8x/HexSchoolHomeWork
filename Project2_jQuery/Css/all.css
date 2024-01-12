@@ -10,7 +10,7 @@ html{
   background-color: #00CC99;
   position: fixed;
   bottom: 3vh;
-  right: 15vw;
+  right: 10vw;
   font-size: 100%;
   border-radius: 50%;
   display: flex;
@@ -153,7 +153,7 @@ a.logo:hover {
 }
 
 
-.menu.active ul {
+.menu .dropdown.active {
   display: block;
   position: absolute;
   z-index: 99;
@@ -390,6 +390,27 @@ footer li a{
 }
 
 @media screen and (max-width: 768px) {
+
+  .top{
+    right: 1vw;
+  }
+
+  .top:hover{
+    width: 40px;
+  }
+
+ 
+  .top:hover i::after{
+    content: " ";
+    opacity: 0;
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    transition: opacity 1.5s;
+  }
+
+
+
+
   body {
     font-size: calc(.8em + 6 * ((100vw - 320px) / 680));
   }
