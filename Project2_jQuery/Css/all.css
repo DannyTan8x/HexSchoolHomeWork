@@ -118,7 +118,7 @@ a.logo:hover {
   cursor: pointer;
 }
 
-.menu a{
+.menu > a{
   padding: 30% 10%;
 }
 
