@@ -118,6 +118,9 @@ a.logo:hover {
   cursor: pointer;
 }
 
+.menu a{
+  padding: 30% 10%;
+}
 
 .menu:before, 
 .menu.active::after{
