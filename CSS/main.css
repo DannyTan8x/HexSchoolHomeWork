@@ -52,12 +52,17 @@ table {
 	border-spacing: 0;
 }
 
+image{
+  max-width: 100%;
+  height: auto;
+}
+
 /* Css reset ^ */
 
 .homeMenu{
     position: fixed;
     display: flex;
-    /* width: 150px; */
+    z-index: 99;
     height: 26px;
     align-items: center;
     background-color: #00CC99;
