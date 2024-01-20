@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danny Tan Web Learning</title>
+    <!-- facebook share setting -->
+    <meta property="og:title" content="Danny Tan Web Learning">
+    <meta property="og:description" content="HexSchool Home Work">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dannytan8x.github.io/HexSchoolHomeWork/Project2_jQuery/">
+    <meta property="og:image" content="./image/banner">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/all.css">
     <!-- Google tag (gtag.js) -->
@@ -18,12 +27,183 @@
 
 </head>
 <body>
-    <h1>譚旭發的學習過程</h1>
-    <h2>六角學院作業</h2>
-    <ol>
-        <li><a href="./CompleteResponsive/">Portfolio</a></li>
-        <li><a href="./Project1_htmlCss/">Project 1 - HTML & CSS 網頁</a></li>
-        <li><a href="./Project2_jQuery/">Project 2 - jQuery 網頁</a></li>
-    </ol>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">首頁</a>
+            <a href="#about">關於</a>
+            <a href="#services">服務</a>
+            <a href="#portfolio">專案</a>
+            <a href="#contact">聯繫</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content" style="width: 600px;">
+            <h3>Hello, 我是</h3>
+            <h1>譚 旭 發</h1>
+            <h3>是一名 <span class="multiple-text"><!--Frontend Deverloper --></span></h3>
+            <p>越南籍-華僑人士
+                </p><br>
+            <p>目前在台灣定居， 並且持有台灣依親居留證</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="./download/Danny Tan_Product Manager .pdf" class="btn">下載簡歷</a>
+        </div>
+
+        <div class="home-img" style="right: 0;">
+            <img src="img/DannyHome.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/DannyHome.png" alt="">
+        </div>
+
+        <div class="about-content">
+             <h2 class="heading">關於 <span>我</span></h2>
+             <!-- <h3>而我是一名 <span class="multiple-text">Frontend Deverloper </span></h3> -->
+             <p>我英文名字是 Danny 擁有豐富的產品專案管理經驗,在現在的工作中,我負責自由品牌事業的的行銷企劃從0-1的階段,透過蒐集市場情報並結合客戶需求,制定個別ODM方案,成功提高產品的市場競爭力。</p>
+            <p>「注重細節的科技魂」是同事們對我的封號,細心謹慎的特質讓我能夠確保每項專案執行的品質,同時也是網路最新技術與應用趨勢的熱愛者。 目前也正自學程式語言JavaScrip (React; Node.js)及SQL,以此增加產業熟悉度與專業度,期許能擔任客戶與開發人員間的最佳的橋樑, 成為團隊中的助力,一同邁向卓越。
+                </p>
+             <a href="#" class="btn">閱讀更多</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">我能提供的 <span>服務</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>網頁開發</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo dolor vel non quis doloribus tempore repudiandae consequuntur nihil nostrum, optio accusantium doloremque exercitationem quas sapiente. Quod quam aliquam nemo!</p>
+                <a href="#" class="btn">探索更多</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-paint' ></i>
+                <h3>圖文設計</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo dolor vel non quis doloribus tempore repudiandae consequuntur nihil nostrum, optio accusantium doloremque exercitationem quas sapiente. Quod quam aliquam nemo!</p>
+                <a href="#" class="btn">探索更多</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-line-chart' ></i>
+                <h3>越南市場分析與語言翻譯</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo dolor vel non quis doloribus tempore repudiandae consequuntur nihil nostrum, optio accusantium doloremque exercitationem quas sapiente. Quod quam aliquam nemo!</p>
+                <a href="#" class="btn">探索更多</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">最新 <span>專案</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>HTML & CSS 網頁</h4>
+                    <p>Design a website with HTML & CSS, </p>
+                    <a href="../Project1_htmlCss/"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>jQuery 網頁</h4>
+                    <p>Apply Light Box2, Go to Top, menu list</p>
+                    <a href="../Project2_jQuery/"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">聯繫 <span>我!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="姓名">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="電話號碼">
+                <input type="text" placeholder="主旨">
+            </div>
+            <textarea name="" id="" width="30" rows="10" placeholder="留言"></textarea>
+            <input type="submit" value="發送" class="btn">
+        </form>
+    </section>
+
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Danny | All Right Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="scrollreveal.js"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- custom js cript -->
+    <script src="/JS/main.js"></script>
 </body>
 </html>
