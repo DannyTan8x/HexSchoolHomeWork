@@ -103,6 +103,9 @@ section{
 
 }
 
+.home-content{
+    width: 30vw;
+}
 
 .home-content h3{
   font-size: 3.2rem;
@@ -441,6 +444,9 @@ input::-webkit-inner-spin-button {
 @media (max-width: 768px){
   #menu-icon{
       display: block;
+  }
+  .home-content{
+    width: auto;
   }
 
    .navbar{
