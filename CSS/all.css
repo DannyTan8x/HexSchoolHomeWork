@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
 
 *{
   margin: 0;
@@ -8,7 +10,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Serif TC', serif;
 }
 
 :root{
@@ -86,7 +88,8 @@ section{
 }
 
 .home-img img{
-  width: 35vw;
+  max-width: 35vw;
+  max-height: 70vh;
   /* box-shadow: 0 1rem 1rem var(--main-color); */
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -198,6 +201,7 @@ span{
 .about-content p{
   font-size: 1.6rem;
   margin:  2rem 0 3rem;
+  line-height: 1.5em;
 }
 
 .services h2{
@@ -207,7 +211,7 @@ span{
 .services-container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -220,6 +224,7 @@ span{
   text-align: center;
   border: .2rem solid var(--bg-color);
   transition: .5s ease;
+  position: relative;
 }
 
 .services-container .services-box:hover{
@@ -239,6 +244,24 @@ span{
 .services-box  p{
   font-size: 1.6rem;
   margin:  1rem 0 3rem;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.services-box ul{
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+    margin-bottom: 3rem;
+}
+
+.services-box .btn{
+    position: absolute;
+    bottom: 15px;
+    left: 30%;
+    right: 30%;
+
 }
 
 .portfolio{
