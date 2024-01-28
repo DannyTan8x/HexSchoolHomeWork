@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // ********** typed js **************** 
 const typed = new Typed('.multiple-text', {
-    strings: ['前端工程師', '產品經理', '越南語翻譯專員'],
+    strings: ['前端工程師', '產品經理', '越南市場分析師'],
     typeSpeed: 100, //delaytime
     backSpeed: 50,
     backDelay: 1000,

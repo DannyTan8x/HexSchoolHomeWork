@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;800&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+body {
+  background-color: #EFE9E7;
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #3D1101;
+}
+
+header {
+  background-image: url("../image/header_desktop.png");
+  background-position: right;
+  background-size: cover;
+}
+header * {
+  color: #fff;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.containerP3 {
+  max-width: 1024px;
+  padding: 0 16px;
+  position: relative;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.navBar {
+  /* height: 56px; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 16px 55px;
+}
+
+.menu {
+  display: flex;
+  margin-right: 40px;
+}
+.menu li a {
+  padding: 16px;
+}
+
+.banner {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.slogan h1 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.secret {
+  padding: 50px 0;
+}
+.secret h2 {
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  position: relative;
+}
+.secret h2::after, .secret h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  background-color: #3D1101;
+}
+.secret h2::before {
+  left: -50%;
+}
+.secret h2::after {
+  right: -50%;
+}
+.secret ul {
+  display: flex;
+  justify-content: center;
+}
+.secret ul li {
+  max-width: 30%;
+  padding: 1%;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}
+.secret ul li img {
+  margin: 10px;
+  border-radius: 50%;
+  width: 200px;
+}
+.secret ul li h3 {
+  text-align: center;
+  padding: 10px;
+}
+.secret ul li p {
+  text-align: left;
+}
+
+.chef {
+  background-color: #3D1101;
+}
+.chef .chefImg {
+  background-image: url("../image/main_chef_brown.png");
+  background-size: cover;
+  width: 450px;
+  height: 450px;
+  background-repeat: no-repeat;
+}
+.chef .chefContent {
+  width: 50%;
+  padding: 25px;
+}
+.chef .chefContent * {
+  color: #EFE9E7;
+  line-height: 1.2;
+}
+
+.feedback h2 {
+  margin: 50px;
+}
+.feedback ul {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback ul li {
+  width: 33%;
+  display: flex;
+  align-items: flex-start;
+}
+.feedback ul li img {
+  border-radius: 50%;
+  width: 67px;
+}
+.feedback ul li .content {
+  padding: 0 13px;
+}
+.feedback ul li .content h3 {
+  padding: 24px 0;
+}
+.feedback ul li .content p {
+  line-height: 1.2;
+}
+
+.reserve {
+  background-color: rgba(250, 250, 250, 0.7);
+}
+
+footer .containerP3 {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+footer .foodCol {
+  width: 32%;
+}
+footer h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px 8px 8px 16px;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 16px 8px 8px 16px;
+}
+footer ul {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 16px 8px 8px 16px;
+}
+footer .socialLink {
+  text-align: right;
+}
+footer .foodLogo {
+  font-size: 49px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+footer .link i {
+  font-size: 36px;
+  margin-left: 12px;
+}

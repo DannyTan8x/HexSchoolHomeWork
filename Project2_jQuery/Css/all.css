@@ -1,9 +1,7 @@
 html{
   scroll-behavior: smooth;
 }
-.homeMenu:hover{
-  filter: opacity(100%);
-}
+
 .top{
   width: 40px;
   height:40px;
