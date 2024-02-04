@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;800&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+@import 'mixin';
+@import 'reset';
+// screen system:
+$laggScreen : 80vw;
+$mediumScreen: 98vw;
+$smallScreen : 100vw;
+// color system:
+$mainColor : #3D1101;
+$mainYellow: #EFE9E7;
+$whiteColor: #fff;
+$blackColor: #000;
+$btnPrimerycolor: #F56C23;
+
+//btn setup:
+@mixin btnPrimery{
+  background-color: $btnPrimerycolor;
+  color: $whiteColor;
+}
+@mixin btnClose{
+  background-color: rgb( $blackColor, 35%);
+  color: $whiteColor;
+}
+
+body{
+  background-color: $mainYellow;
+}
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #3D1101;
+}
+
+header {
+  background-image: url("../image/header_desktop.png");
+  background-position: right;
+  background-size: cover;
+  @include iphone(){
+    background-position: -550px;
+
+  }
+  * {
+    color: $whiteColor;
+  }
+
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.containerP3 {
+  max-width: $laggScreen;
+  padding: 0 11px;
+  position: relative;
+  margin: 0 auto;
+  // @include pad{
+  //   max-width: $mediumScreen;
+  // }
+  @include iphone{
+    max-width: $smallScreen;
+  }
+}
+h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+h3{
+  font-size: 18px;
+  font-weight: 100;
+}
+p{
+  font-size: 16px;
+  font-weight: 100;
+}
+header{
+  width: 100%;
+  .navBar {
+    position:fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb($blackColor, 75%);
+    @include iphone(){
+      height: 8vh;
+    }
+    z-index: 2;
+    .fa-bars{
+      display: none;
+      font-size: 26px;
+  
+      @include iphone(){
+        display: inline-block;
+        margin-right: 5vw;
+      }
+    }
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px 0;
+    margin-left: 10vw;
+    @include pad{
+      margin-left: 5vw;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    margin-right: 5vw;
+  
+    li a {
+      padding: 16px;
+    }
+  
+    @include iphone(){
+      display: none;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+body.showBurger .menu{
+  @include iphone(){
+    display: block;
+    position: absolute;
+    top: 8vh;
+    background-color: rgb($blackColor, 75%);
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    li a {
+      display: block;
+      line-height: 26px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+
+.banner {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan {
+  position: relative;
+  color: $whiteColor;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb( $blackColor, 35%);
+
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.secret{
+  padding: 50px 0;
+  
+  h2{
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+    position: relative;
+    &::after, &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100px;
+      height: 1px;
+      background-color: $mainColor;
+      @include iphone(){
+        width: 0;
+      }
+    }
+    &::before{
+      left: -50%;
+    }
+    &::after{
+      right: -50%;
+    }
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include iphone(){
+      flex-direction: column;
+    }
+    li{
+      max-width: 30%;
+      font-size: 16px;
+      font-weight: 100;
+      text-align: center;
+      @include iphone(){
+        max-width: 100%;
+        padding: 30px 0;
+      }
+      img{
+        border-radius: 50%;
+        width: 200px;
+      }
+      h3{
+        text-align: center;
+        padding: 10px 0;
+      }
+      p{
+        padding: 1%;
+        text-align: left;
+
+      }
+    }
+  }
+}
+
+.chef{
+  background-color: $mainColor;
+  .containerP3{
+    @include iphone(){
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  .chefImg{
+    background-image: url('../image/main_chef_brown.png');
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    @include iphone(){
+      width: 100%;
+    }
+  }
+  .chefContent{
+    width: 50%;
+    padding: 25px;
+    @include iphone(){
+      width: 100%;
+      padding: 30px;
+    }
+    * {
+      color: $mainYellow;
+      line-height: 1.2;
+    }
+  }
+}
+
+.feedback{
+  margin: 50px 0;
+  h2{
+    margin-bottom: 50px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    @include iphone(){
+      flex-direction: column;
+    }
+    li{
+      width: 33%;
+      display: flex;
+      // justify-content:start;
+      align-items: flex-start;
+      @include iphone(){
+        width: 100%;
+      }
+      img{
+        border-radius: 50%;
+        width: 67px;
+      }
+      .content{
+        padding: 0 13px;
+        h3{
+          padding: 24px 0;
+        }
+        p{
+          line-height: 1.2;
+        }
+        span{
+          display: block;
+          text-align: right;
+          font-size: 16px;
+          font-weight: 100;
+          color: rgb($mainColor, 75%);
+        }
+      }
+    }
+  }
+
+}
+
+.reserve{
+  background-color: rgb($whiteColor, 70%);
+  padding: 50px 0;
+  h2{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 38px;
+    line-height: 1.2;
+  }
+  .wrapper{
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    @include iphone(){
+      flex-direction: column;
+      align-items: normal;
+    }
+    *{
+      font-size: 14px;
+      font-weight: 100;
+
+    }
+    iframe{
+      width: 48%;
+      @include iphone(){
+        width: 100%;
+      }
+    }
+    .info{
+      align-items: normal;
+      justify-content: space-between;
+      width: 48%;
+      @include iphone(){
+        width: 100%;
+      }
+      label{
+        margin: 6px 0;
+        cursor: pointer;
+      }
+      input{
+        margin-bottom: 6px;
+        cursor: pointer;
+      }
+      h5{
+        margin: 6px 0;
+      }
+      ul{
+        display: flex;
+        li{
+          margin-right: 36px;
+        }
+      }
+      .btn{
+        float: right;
+        width: 70px;
+        height: 32px;
+        @include btnClose();
+        border: none;
+        border-radius: 3px;
+        margin-left: 11px;
+        &[type="submit"]{
+          @include btnPrimery()
+        }
+      }
+    }
+  }
+}
+
+
+footer {
+  .containerP3 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    @include iphone(){
+      flex-direction: column;
+    }
+  }
+
+  .foodCol {
+    width: 33%;
+    @include iphone(){
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 8px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 8px;
+  }
+  ul {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 8px;
+  }
+  .socialLink {
+    text-align: right;
+  }
+  
+  .foodLogo {
+    font-size: 49px;
+    font-weight: 800;
+    margin-bottom: 22px;
+  }
+  
+  .link i {
+    font-size: 36px;
+    margin-left: 12px;
+  }
+}
+
+

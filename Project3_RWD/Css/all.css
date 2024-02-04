@@ -1,4 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;800&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+/* Css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+body {
+  position: relative;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  pointer-events: none;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Css reset ^ */
 body {
   background-color: #EFE9E7;
 }
@@ -12,6 +83,11 @@ header {
   background-image: url("../image/header_desktop.png");
   background-position: right;
   background-size: cover;
+}
+@media (max-width: 568px) {
+  header {
+    background-position: -550px;
+  }
 }
 header * {
   color: #fff;
@@ -29,10 +105,15 @@ header * {
 }
 
 .containerP3 {
-  max-width: 1024px;
-  padding: 0 16px;
+  max-width: 80vw;
+  padding: 0 11px;
   position: relative;
   margin: 0 auto;
+}
+@media (max-width: 568px) {
+  .containerP3 {
+    max-width: 100vw;
+  }
 }
 
 h2 {
@@ -50,29 +131,76 @@ p {
   font-weight: 100;
 }
 
-.navBar {
-  /* height: 56px; */
-  position: absolute;
+header {
+  width: 100%;
+}
+header .navBar {
+  position: fixed;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
+  z-index: 2;
 }
-
-.logo {
+@media (max-width: 568px) {
+  header .navBar {
+    height: 8vh;
+  }
+}
+header .navBar .fa-bars {
+  display: none;
+  font-size: 26px;
+}
+@media (max-width: 568px) {
+  header .navBar .fa-bars {
+    display: inline-block;
+    margin-right: 5vw;
+  }
+}
+header .logo {
   font-size: 24px;
   font-weight: 700;
-  padding: 16px 55px;
+  padding: 16px 0;
+  margin-left: 10vw;
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin-left: 5vw;
+  }
+}
+header .menu {
+  display: flex;
+  margin-right: 5vw;
+}
+header .menu li a {
+  padding: 16px;
+}
+@media (max-width: 568px) {
+  header .menu {
+    display: none;
+    height: 0;
+    overflow: hidden;
+  }
 }
 
-.menu {
-  display: flex;
-  margin-right: 40px;
-}
-.menu li a {
-  padding: 16px;
+@media (max-width: 568px) {
+  body.showBurger .menu {
+    display: block;
+    position: absolute;
+    top: 8vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+  }
+  body.showBurger .menu li a {
+    display: block;
+    line-height: 26px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .banner {
@@ -117,6 +245,11 @@ p {
   height: 1px;
   background-color: #3D1101;
 }
+@media (max-width: 568px) {
+  .secret h2::after, .secret h2::before {
+    width: 0;
+  }
+}
 .secret h2::before {
   left: -50%;
 }
@@ -125,58 +258,100 @@ p {
 }
 .secret ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 568px) {
+  .secret ul {
+    flex-direction: column;
+  }
 }
 .secret ul li {
   max-width: 30%;
-  padding: 1%;
   font-size: 16px;
   font-weight: 100;
   text-align: center;
 }
+@media (max-width: 568px) {
+  .secret ul li {
+    max-width: 100%;
+    padding: 30px 0;
+  }
+}
 .secret ul li img {
-  margin: 10px;
   border-radius: 50%;
   width: 200px;
 }
 .secret ul li h3 {
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 .secret ul li p {
+  padding: 1%;
   text-align: left;
 }
 
 .chef {
   background-color: #3D1101;
 }
+@media (max-width: 568px) {
+  .chef .containerP3 {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 .chef .chefImg {
   background-image: url("../image/main_chef_brown.png");
   background-size: cover;
+  background-position: center;
   width: 450px;
   height: 450px;
   background-repeat: no-repeat;
 }
+@media (max-width: 568px) {
+  .chef .chefImg {
+    width: 100%;
+  }
+}
 .chef .chefContent {
   width: 50%;
   padding: 25px;
+}
+@media (max-width: 568px) {
+  .chef .chefContent {
+    width: 100%;
+    padding: 30px;
+  }
 }
 .chef .chefContent * {
   color: #EFE9E7;
   line-height: 1.2;
 }
 
+.feedback {
+  margin: 50px 0;
+}
 .feedback h2 {
-  margin: 50px;
+  margin-bottom: 50px;
 }
 .feedback ul {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 568px) {
+  .feedback ul {
+    flex-direction: column;
+  }
+}
 .feedback ul li {
   width: 33%;
   display: flex;
   align-items: flex-start;
+}
+@media (max-width: 568px) {
+  .feedback ul li {
+    width: 100%;
+  }
 }
 .feedback ul li img {
   border-radius: 50%;
@@ -191,9 +366,88 @@ p {
 .feedback ul li .content p {
   line-height: 1.2;
 }
+.feedback ul li .content span {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 100;
+  color: rgba(61, 17, 1, 0.75);
+}
 
 .reserve {
-  background-color: rgba(250, 250, 250, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px 0;
+}
+.reserve h2 {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 38px;
+  line-height: 1.2;
+}
+.reserve .wrapper {
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 568px) {
+  .reserve .wrapper {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+.reserve .wrapper * {
+  font-size: 14px;
+  font-weight: 100;
+}
+.reserve .wrapper iframe {
+  width: 48%;
+}
+@media (max-width: 568px) {
+  .reserve .wrapper iframe {
+    width: 100%;
+  }
+}
+.reserve .wrapper .info {
+  align-items: normal;
+  justify-content: space-between;
+  width: 48%;
+}
+@media (max-width: 568px) {
+  .reserve .wrapper .info {
+    width: 100%;
+  }
+}
+.reserve .wrapper .info label {
+  margin: 6px 0;
+  cursor: pointer;
+}
+.reserve .wrapper .info input {
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.reserve .wrapper .info h5 {
+  margin: 6px 0;
+}
+.reserve .wrapper .info ul {
+  display: flex;
+}
+.reserve .wrapper .info ul li {
+  margin-right: 36px;
+}
+.reserve .wrapper .info .btn {
+  float: right;
+  width: 70px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-left: 11px;
+}
+.reserve .wrapper .info .btn[type=submit] {
+  background-color: #F56C23;
+  color: #fff;
 }
 
 footer .containerP3 {
@@ -201,23 +455,34 @@ footer .containerP3 {
   padding-top: 50px;
   justify-content: space-between;
 }
+@media (max-width: 568px) {
+  footer .containerP3 {
+    flex-direction: column;
+  }
+}
 footer .foodCol {
-  width: 32%;
+  width: 33%;
+}
+@media (max-width: 568px) {
+  footer .foodCol {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 footer h3 {
   font-size: 24px;
   font-weight: 500;
-  padding: 16px 8px 8px 16px;
+  padding: 8px;
 }
 footer p {
   font-size: 16px;
   font-weight: 300;
-  padding: 16px 8px 8px 16px;
+  padding: 16px 8px;
 }
 footer ul {
   font-size: 16px;
   font-weight: 300;
-  padding: 16px 8px 8px 16px;
+  padding: 16px 8px;
 }
 footer .socialLink {
   text-align: right;

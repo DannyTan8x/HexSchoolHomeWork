@@ -32,7 +32,7 @@
     gtag('config', 'G-XGRCSNVX8W');
     </script>
 </head>
-<body>
+<body class="showBurger">
   <!-- <div class="mainPage flex"> -->
   <ul class="homeMenu">
       <li class="dropDown">
@@ -46,16 +46,17 @@
 <!-- </div> -->
 
 <header>
-
+  <div class="navBar">
+    <div class="logo">六角西餐廳</div>
+    <i class="fa-solid fa-bars"></i>
+    <ul class="menu">
+      <li><a href="#">首頁</a></li>
+      <li><a href="#">訂餐</a></li>
+      <li><a href="#">登入</a></li>
+    </ul>
+  </div>
   <div class="containerP3">
-    <div class="navBar">
-      <div class="logo">六角西餐廳</div>
-      <ul class="menu">
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">訂餐</a></li>
-        <li><a href="#">登入</a></li>
-      </ul>
-    </div>
+  
     <div class="banner">
       <div class="slogan">
         <h1><span>咬一口</span><span>就無法忘懷的漢堡</span></h1>
@@ -115,6 +116,7 @@
         <div class="content">
           <h3>高雄一口吃</h3>
           <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+          <span>-- 金身道士</span>
         </div>
       </li>
       <li>
@@ -122,6 +124,7 @@
         <div class="content">
           <h3>廟口小霸王</h3>
           <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+          <span>-- 產品經理</span>
         </div>
       </li>
       <li>
@@ -129,6 +132,7 @@
         <div class="content">
           <h3>春天也來了</h3>
           <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+          <span>-- 美麗萬分</span>
         </div>
       </li>
     </ul>
@@ -136,10 +140,38 @@
 </section>
 
 <section class="reserve">
-  <div class="containerP3">
-    <h2><span>我們的位置不太夠坐</span>
+  <div class="containerP3 flexCol">
+    <h2><span>我們的位置不太夠坐</span><br>
       <span>要不要先定位呢？</span></h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3162.3431933598517!2d120.30014339243398!3d22.605706309042688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0379d6c3463f%3A0x2053cb215bfc0b8c!2z6Luf6auU5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1706452761366!5m2!1szh-TW!2stw" width="460" height="386" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="wrapper flex">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3162.3431933598517!2d120.30014339243398!3d22.605706309042688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0379d6c3463f%3A0x2053cb215bfc0b8c!2z6Luf6auU5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1706452761366!5m2!1szh-TW!2stw" width="460" height="386" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form class="info flexCol" action="">
+          <label for="fullName">姓名</label>
+          <input id="fullName" type="text" name="fullName" placeholder="六角講師吃尾牙">
+          <label for="tel">電話</label>
+          <input type="tel" name="tel" id="tel" placeholder="02-1234567">
+          <label for="email">信箱</label>
+          <input type="email" name="email" id="email" placeholder="test@gmail.com">
+          <label for="reserveNum">人數</label>
+          <input type="number" name="reserveNum" id="reserveNum">
+          <h5>是否需要素食</h5>
+          <ul>
+            <li>
+              <label for="yesVege">是</label>
+              <input type="radio" name="vegetarian" id="yesVege" value="yes">
+            </li>
+            <li>
+              <label for="noVege">否</label>
+              <input type="radio" name="vegetarian" id="noVege" value="no">
+            </li>
+          </ul>
+          <div>
+            <input class="btn" type="submit" value="送出">
+            <input class="btn" type="button" value="取消">
+          </div>
+        </form>
+      </div>
   </div>
 </section>
 

@@ -28,4 +28,9 @@ $(document).ready(function(){
         $('#showMenu').css("display", "block");
         $(this).css("display", "none");
       });
+
+      $('.fa-bars').click(function (event){
+        event.preventDefault();
+        $('body').toggleClass("showBurger");
+      })
     });
