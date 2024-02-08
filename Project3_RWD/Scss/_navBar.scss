@@ -40,6 +40,10 @@ header{
     
       li a {
         padding: 16px;
+        &:hover{
+          text-shadow: 0px 0px 10px $whiteColor;
+          font-weight: 600;
+        }
       }
     
       @include iphone(){
