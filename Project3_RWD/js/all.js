@@ -51,4 +51,16 @@ $(document).ready(function(){
         $('.inCart').html(inCart);
        });
 
+       $('#register').click(function(event){
+        event.preventDefault();
+        $('.login').css('display', 'none');
+        $('.register').css('display', 'block');
+       });
+
+       $('#haveAcc').click(function(event){
+        event.preventDefault();
+        $('.register').css('display', 'none');
+        $('.login').css('display', 'flex');
+       });
+
     });

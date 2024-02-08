@@ -117,6 +117,12 @@ p {
   font-weight: 100;
 }
 
+.lageLogo {
+  font-size: 49px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
 header {
   width: 100%;
 }
@@ -444,9 +450,27 @@ header * {
   border-radius: 3px;
   margin-left: 11px;
 }
+.reserve .wrapper .info .btn:hover {
+  font-weight: 500;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
+}
+.reserve .wrapper .info .btn:active {
+  transform: translate(0px, 0px);
+  box-shadow: none;
+}
 .reserve .wrapper .info .btn[type=submit] {
   background-color: #F56C23;
   color: #fff;
+}
+.reserve .wrapper .info .btn[type=submit]:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
+  font-weight: 500;
+}
+.reserve .wrapper .info .btn[type=submit]:active {
+  box-shadow: none;
+  transform: translate(0px, 0px);
 }
 
 .produce .containerP3 {
@@ -626,12 +650,12 @@ header * {
   align-items: center;
   height: 32px;
   width: 150px;
-  z-index: 99;
+  z-index: 1;
 }
 .produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::before, .produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::after {
   content: "";
   position: absolute;
-  z-index: -999;
+  z-index: -9;
 }
 .produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::before {
   transform: rotate(-45deg);
@@ -740,6 +764,180 @@ header * {
   color: #EFE9E7;
 }
 
+.account {
+  margin-top: 50px;
+  min-height: 50vh;
+}
+.account .containerP3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account .containerP3 h2 {
+  margin-bottom: 35px;
+}
+.account .containerP3 .login {
+  width: 300px;
+  border-top: 3px solid #F56C23;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.account .containerP3 .login h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.account .containerP3 .login label {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.account .containerP3 .login #forgetPW {
+  color: #F56C23;
+  font-size: 14px;
+}
+.account .containerP3 .login .btnGroup {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.account .containerP3 .login .btnGroup .btn {
+  width: 42%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.account .containerP3 .login .btnGroup .btn:hover {
+  font-weight: 500;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
+}
+.account .containerP3 .login .btnGroup .btn:active {
+  transform: translate(0px, 0px);
+  box-shadow: none;
+}
+.account .containerP3 .login .btnGroup .btn[type=submit] {
+  background-color: #F56C23;
+  color: #fff;
+}
+.account .containerP3 .login .btnGroup .btn[type=submit]:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
+  font-weight: 500;
+}
+.account .containerP3 .login .btnGroup .btn[type=submit]:active {
+  box-shadow: none;
+  transform: translate(0px, 0px);
+}
+.account .containerP3 .register {
+  display: none;
+  width: 620px;
+  border-top: 3px solid #F56C23;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+}
+@media (max-width: 568px) {
+  .account .containerP3 .register {
+    width: 300px;
+  }
+}
+.account .containerP3 .register h3 {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.account .containerP3 .register .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 568px) {
+  .account .containerP3 .register .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.account .containerP3 .register .wrapper .term {
+  width: 48%;
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 568px) {
+  .account .containerP3 .register .wrapper .term {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.account .containerP3 .register .wrapper .form {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 568px) {
+  .account .containerP3 .register .wrapper .form {
+    width: 100%;
+  }
+}
+.account .containerP3 .register .wrapper .form label {
+  font-size: 16px;
+  font-weight: 100;
+}
+.account .containerP3 .register .wrapper .form #haveAcc {
+  color: #F56C23;
+  font-size: 14px;
+}
+.account .containerP3 .register .wrapper .form .btnGroup {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.account .containerP3 .register .wrapper .form .btnGroup .btn {
+  width: 42%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.account .containerP3 .register .wrapper .form .btnGroup .btn:hover {
+  font-weight: 500;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
+}
+.account .containerP3 .register .wrapper .form .btnGroup .btn:active {
+  transform: translate(0px, 0px);
+  box-shadow: none;
+}
+.account .containerP3 .register .wrapper .form .btnGroup .btn[type=submit] {
+  background-color: #F56C23;
+  color: #fff;
+}
+.account .containerP3 .register .wrapper .form .btnGroup .btn[type=submit]:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
+  font-weight: 500;
+}
+.account .containerP3 .register .wrapper .form .btnGroup .btn[type=submit]:active {
+  box-shadow: none;
+  transform: translate(0px, 0px);
+}
+
 footer .containerP3 {
   display: flex;
   padding-top: 50px;
@@ -776,11 +974,6 @@ footer ul {
 }
 footer .socialLink {
   text-align: right;
-}
-footer .foodLogo {
-  font-size: 49px;
-  font-weight: 800;
-  margin-bottom: 22px;
 }
 footer .link i {
   font-size: 36px;

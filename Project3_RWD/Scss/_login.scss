@@ -1,0 +1,120 @@
+.account{
+    margin-top: 50px;
+    min-height: 50vh;
+    .containerP3{
+        @include flexCol;
+        align-items: center;
+        h2{
+            margin-bottom: 35px;
+        }
+        .login{
+            width: 300px;
+            border-top: 3px solid $btnPrimerycolor;
+            box-shadow: 5px 5px 5px rgb($blackColor, 25%);
+            padding: 15px;
+            @include flexCol;
+            h3{
+                text-align: center;
+                font-weight: 500;
+                // padding-top: 15px;
+            }
+            label{
+                padding-top: 15px;
+                font-size: 16px;
+                font-weight: 100;
+            }
+            #forgetPW{
+                color: $btnPrimerycolor;
+                font-size: 14px;
+            }
+            .btnGroup{
+                margin-top: 30px;
+                width: 100%;
+                @include flexSB;
+                flex-direction: row-reverse;
+                .btn{
+                    width: 42%;
+                    height: 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                    cursor: pointer;
+                    @include btnClose();
+                    border: none;
+                    border-radius: 3px;
+                    &[type="submit"]{
+                      @include btnPrimery()
+                    }
+                  }
+            }
+        }
+        .register{
+            display: none;
+            width: 620px;
+            border-top: 3px solid $btnPrimerycolor;
+            box-shadow: 5px 5px 5px rgb($blackColor, 25%);
+            padding: 15px;
+            @include iphone(){
+                width: 300px;
+            }
+            h3{
+                text-align: center;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+            .wrapper{
+                @include flexSB;
+                @include iphone(){
+                    @include flexCol;
+                } 
+                .term{
+                    width: 48%;
+                    font-size: 18px;
+                    line-height: 1.2;
+                    @include iphone(){
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+                .form{
+                    width: 48%;
+                    @include flexCol;
+                    @include iphone(){
+                        width: 100%;
+                    }
+                    label{
+                        // padding-top: 15px;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                    #haveAcc{
+                        color: $btnPrimerycolor;
+                        font-size: 14px;
+                    }
+                    .btnGroup{
+                        margin-top: 30px;
+                        width: 100%;
+                        @include flexSB;
+                        flex-direction: row-reverse;
+                        .btn{
+                            width: 42%;
+                            height: 32px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 14px;
+                            cursor: pointer;
+                            @include btnClose();
+                            border: none;
+                            border-radius: 3px;
+                            &[type="submit"]{
+                            @include btnPrimery()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
