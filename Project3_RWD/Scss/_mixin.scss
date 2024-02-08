@@ -1,18 +1,64 @@
+// screen setup
 @mixin pad(){
    @media (max-width: 768px) {
      @content
    }
+};
+
+@mixin padPro(){
+  @media (max-width: 1024px) {
+    @content
+  }
 }
 
 @mixin iphone(){
     @media  (max-width: 568px) {
         @content
     }
-}
+};
 
 @mixin iphoneMini(){
     @media (max-width: 320px) {
         @content
     }
+};
+
+// layout setup
+@mixin flexCol(){
+  display: flex;
+  flex-direction: column;
+};
+
+@mixin flexSB(){
+  display: flex;
+  justify-content: space-between;
+};
+
+//btn setup:
+@mixin btnPrimery{
+  background-color: $btnPrimerycolor;
+  color: $whiteColor;
+}
+@mixin btnClose{
+  background-color: rgb( $blackColor, 35%);
+  color: $whiteColor;
 }
 
+@mixin btnCart{
+  border: 1px solid $btnPrimerycolor;
+  color: $btnPrimerycolor;
+  border-radius: 5px;
+  cursor: pointer;
+  >*{
+    font-size: 16px;
+    padding: 6px;
+    color: $btnPrimerycolor;
+  }
+  &:hover{
+    background-color: $btnPrimerycolor;
+    color: $mainYellow;
+    >*{
+      color: $mainYellow;
+    }
+  }
+}

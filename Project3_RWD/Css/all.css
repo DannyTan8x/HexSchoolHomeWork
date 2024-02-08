@@ -79,20 +79,6 @@ body {
   color: #3D1101;
 }
 
-header {
-  background-image: url("../image/header_desktop.png");
-  background-position: right;
-  background-size: cover;
-}
-@media (max-width: 568px) {
-  header {
-    background-position: -550px;
-  }
-}
-header * {
-  color: #fff;
-}
-
 .flexCol {
   display: flex;
   flex-direction: column;
@@ -203,6 +189,20 @@ header .menu li a {
   }
 }
 
+header {
+  background-image: url("../image/header_desktop.png");
+  background-position: right;
+  background-size: cover;
+}
+@media (max-width: 568px) {
+  header {
+    background-position: -550px;
+  }
+}
+header * {
+  color: #fff;
+}
+
 .banner {
   height: 420px;
   display: flex;
@@ -259,7 +259,6 @@ header .menu li a {
 .secret ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @media (max-width: 568px) {
   .secret ul {
@@ -448,6 +447,297 @@ header .menu li a {
 .reserve .wrapper .info .btn[type=submit] {
   background-color: #F56C23;
   color: #fff;
+}
+
+.produce .containerP3 {
+  margin-top: 48px;
+}
+@media (max-width: 768px) {
+  .produce .containerP3 {
+    max-width: 95%;
+  }
+}
+@media (max-width: 1024px) {
+  .produce .containerP3 {
+    max-width: 90%;
+  }
+}
+@media (max-width: 568px) {
+  .produce .containerP3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.produce .containerP3 .sideMenu {
+  float: left;
+  width: 220px;
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .sideMenu {
+    width: 100%;
+  }
+}
+.produce .containerP3 .sideMenu .menuList h2 {
+  margin-bottom: 16px;
+}
+.produce .containerP3 .sideMenu .menuList ul.proCategories li a {
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid #3D1101;
+  padding: 8px;
+  cursor: default;
+}
+.produce .containerP3 .sideMenu .menuList ul.proCategories li a.active, .produce .containerP3 .sideMenu .menuList ul.proCategories li a:hover {
+  background-color: #3D1101;
+  color: #fff;
+}
+.produce .containerP3 .mainContain {
+  min-height: 50vh;
+  margin-left: 240px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .mainContain {
+    margin-top: 20px;
+    margin-left: unset;
+  }
+}
+.produce .containerP3 .mainContain .toolBar {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .mainContain .toolBar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.produce .containerP3 .mainContain .toolBar .searchBar {
+  width: 66%;
+  position: relative;
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .mainContain .toolBar .searchBar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.produce .containerP3 .mainContain .toolBar .searchBar #search {
+  display: inline;
+  width: 100%;
+  font-size: 16px;
+  padding: 3px;
+  height: 100%;
+}
+.produce .containerP3 .mainContain .toolBar .searchBar a {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 32px;
+  cursor: pointer;
+  background-color: #3D1101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.produce .containerP3 .mainContain .toolBar .searchBar a .fa-solid {
+  color: #fff;
+  font-size: 1.2em;
+}
+.produce .containerP3 .mainContain .toolBar .fuctionLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .mainContain .toolBar .fuctionLinks {
+    justify-content: flex-end;
+  }
+}
+.produce .containerP3 .mainContain .toolBar .fuctionLinks a {
+  font-size: 16px;
+  font-weight: 100;
+  border-right: 1px solid #3D1101;
+  padding: 0 12px;
+}
+.produce .containerP3 .mainContain .toolBar .fuctionLinks a:last-child {
+  border-right: none;
+}
+.produce .containerP3 .mainContain .toolBar .fuctionLinks a .fa-cart-shopping {
+  color: #3D1101;
+  font-size: 26px;
+  position: relative;
+}
+.produce .containerP3 .mainContain .toolBar .fuctionLinks a .inCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: #F56C23;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  right: -5px;
+  top: -5px;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 33%;
+}
+@media (max-width: 768px) {
+  .produce .containerP3 .mainContain .itemList .itemContainer .itemBox {
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .produce .containerP3 .mainContain .itemList .itemContainer .itemBox {
+    width: 50%;
+  }
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .mainContain .itemList .itemContainer .itemBox {
+    width: 100%;
+  }
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale {
+  top: 22px;
+  right: -32px;
+  transform: rotate(45deg);
+  font-size: 14px;
+  position: absolute;
+  color: #fff;
+  background-color: #00CC99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 150px;
+  z-index: 99;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::before, .produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::after {
+  content: "";
+  position: absolute;
+  z-index: -999;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::before {
+  transform: rotate(-45deg);
+  border-bottom: 10px solid #029e77;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: 0px;
+  bottom: -8px;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .hotSale::after {
+  transform: rotate(180deg);
+  border-top: 12px solid transparent;
+  border-left: 12px solid #029e77;
+  border-right: 12px solid transparent;
+  bottom: -12px;
+  right: 0px;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox.hot .hotSale {
+  display: flex;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.3);
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemImg {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 568px) {
+  .produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemImg img {
+    width: 100%;
+  }
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item:hover .itemImg img {
+  transform: scale(1.2);
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .liked {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .liked > * {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .liked.favorite > * {
+  color: #F56C23;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo {
+  padding: 10px;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo h3 {
+  font-size: 20px;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo h3 span {
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
+  position: relative;
+  padding: 12px;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo h3 span::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #3D1101;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo p {
+  padding: 20px 0 13px 0;
+  font-size: 20px;
+  font-weight: 100;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo p span {
+  font-weight: 500;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo .addToCart {
+  border: 1px solid #F56C23;
+  color: #F56C23;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo .addToCart > * {
+  font-size: 16px;
+  padding: 6px;
+  color: #F56C23;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo .addToCart:hover {
+  background-color: #F56C23;
+  color: #EFE9E7;
+}
+.produce .containerP3 .mainContain .itemList .itemContainer .itemBox .item .itemInfo .addToCart:hover > * {
+  color: #EFE9E7;
 }
 
 footer .containerP3 {

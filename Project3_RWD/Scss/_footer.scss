@@ -1,0 +1,49 @@
+footer {
+    .containerP3 {
+      display: flex;
+      padding-top: 50px;
+      justify-content: space-between;
+      @include iphone(){
+        flex-direction: column;
+      }
+    }
+  
+    .foodCol {
+      width: 33%;
+      @include iphone(){
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      padding: 8px;
+    }
+  
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 16px 8px;
+    }
+    ul {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 16px 8px;
+    }
+    .socialLink {
+      text-align: right;
+    }
+    
+    .foodLogo {
+      font-size: 49px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+    
+    .link i {
+      font-size: 36px;
+      margin-left: 12px;
+    }
+  }

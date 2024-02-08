@@ -1,0 +1,32 @@
+.chef{
+    background-color: $mainColor;
+    .containerP3{
+      @include iphone(){
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+    .chefImg{
+      background-image: url('../image/main_chef_brown.png');
+      background-size: cover;
+      background-position: center;
+      width: 450px;
+      height: 450px;
+      background-repeat: no-repeat;
+      @include iphone(){
+        width: 100%;
+      }
+    }
+    .chefContent{
+      width: 50%;
+      padding: 25px;
+      @include iphone(){
+        width: 100%;
+        padding: 30px;
+      }
+      * {
+        color: $mainYellow;
+        line-height: 1.2;
+      }
+    }
+  }

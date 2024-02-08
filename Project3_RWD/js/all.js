@@ -14,7 +14,7 @@ $(document).ready(function(){
         $('#pageTop').addClass('active').siblings().removeClass('active');
       });
 
-
+      // Mainpage Menu
       $('#showMenu').click(function(event){
         event.preventDefault();
         $('.homeMenu').css("transform", "translateX(0%)");
@@ -28,9 +28,27 @@ $(document).ready(function(){
         $('#showMenu').css("display", "block");
         $(this).css("display", "none");
       });
-
+      // Burger menu toggle
       $('.fa-bars').click(function (event){
         event.preventDefault();
         $('body').toggleClass("showBurger");
       })
+
+      // produce page
+      $('.proCategories li').click(function(event){
+        event.preventDefault();
+        $(this).siblings().find('a').removeClass('active');
+        $(this).find('a').addClass('active');
+      });
+
+      $('.liked').click(function (event) { 
+        event.preventDefault();
+        $(this).toggleClass('favorite');
+       });
+
+       $('.addToCart').click(function (event){
+        let inCart = parseInt($('.inCart').text()) + 1;
+        $('.inCart').html(inCart);
+       });
+
     });

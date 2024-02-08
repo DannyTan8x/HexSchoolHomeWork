@@ -1,0 +1,43 @@
+.feedback{
+    margin: 50px 0;
+    h2{
+      margin-bottom: 50px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      @include iphone(){
+        flex-direction: column;
+      }
+      li{
+        width: 33%;
+        display: flex;
+        // justify-content:start;
+        align-items: flex-start;
+        @include iphone(){
+          width: 100%;
+        }
+        img{
+          border-radius: 50%;
+          width: 67px;
+        }
+        .content{
+          padding: 0 13px;
+          h3{
+            padding: 24px 0;
+          }
+          p{
+            line-height: 1.2;
+          }
+          span{
+            display: block;
+            text-align: right;
+            font-size: 16px;
+            font-weight: 100;
+            color: rgb($mainColor, 75%);
+          }
+        }
+      }
+    }
+  
+  }

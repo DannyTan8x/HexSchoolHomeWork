@@ -1,0 +1,40 @@
+
+header {
+    background-image: url("../image/header_desktop.png");
+    background-position: right;
+    background-size: cover;
+    @include iphone(){
+      background-position: -550px;
+  
+    }
+    * {
+      color: $whiteColor;
+    }
+  
+  }
+
+.banner {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slogan {
+    position: relative;
+    color: $whiteColor;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb( $blackColor, 35%);
+  
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
