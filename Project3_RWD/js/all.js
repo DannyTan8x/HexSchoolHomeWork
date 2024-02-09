@@ -65,18 +65,17 @@ $(document).ready(function(){
 
       
        $(window).scroll(function() { //when window is scrolled
-            let middelLine = $(window).height()/2;
+            let middelLine = $(window).height()/3;
+            let topLine = ($(window).scrollTop()+ middelLine * 2);
+            let bottomLine = ($(window).scrollTop()+ middelLine);
             $(".itemImg").each(function (index, element) {
               if ($(window).width() < 568 ){
-                if  ( $(this).offset().top < ($(window).scrollTop()+ middelLine)){
+                if  ( $(this).offset().top < topLine && $(this).offset().top > bottomLine ){
                     $(this).find('img').css('transform','scale(1.2)');
+                } else{
+                  $(this).find('img').css('transform','scale(1)');
                 };
-                if  ( $(this).offset().top > ($(window).scrollTop()+ middelLine)){
-                    $(this).find('img').css('transform','scale(1)');
-                };
-
-              }
-
+              };
           });
       });
        
