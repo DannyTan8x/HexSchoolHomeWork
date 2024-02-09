@@ -63,4 +63,24 @@ $(document).ready(function(){
         $('.login').css('display', 'flex');
        });
 
-    });
+      
+    
+          
+
+       $(window).scroll(function() { //when window is scrolled
+            let middelLine = $(window).height()/2;
+            $(".itemImg").each(function (index, element) {
+              if ($(window).width() < 568 ){
+                if  ( $(this).offset().top < ($(window).scrollTop()+ middelLine)){
+                    $(this).css('transform','scale(1.2)');
+                };
+                if  ( $(this).offset().top > ($(window).scrollTop()+ middelLine)){
+                    $(this).css('transform','scale(1)');
+                };
+
+              }
+
+          });
+      });
+       
+      });
