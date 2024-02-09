@@ -90,6 +90,8 @@
                     align-items: center;
                     @include iphone(){
                         justify-content: flex-end;
+                        position: sticky;
+                        top: 100px;
                     }
                     a{
                         font-size: 16px;

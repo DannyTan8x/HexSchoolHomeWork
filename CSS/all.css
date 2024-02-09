@@ -89,8 +89,6 @@ section{
 
 .home-img img{
   max-width: 35vw;
-  max-height: 70vh;
-  /* box-shadow: 0 1rem 1rem var(--main-color); */
   animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage {
