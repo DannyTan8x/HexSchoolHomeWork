@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danny Tan Web Learning</title>
+    <link rel="icon" href="./img/9scodes_icon.svg" type="image/x-icon">
+    <title>Danny Tan Portfolio</title>
     <!-- facebook share setting -->
-    <meta property="og:title" content="Danny Tan Web Learning">
-    <meta property="og:description" content="HexSchool Home Work">
+    <meta property="og:title" content="Danny Tan Portfolio">
+    <meta property="og:description" content="Danny Tan Portfolio">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dannytan8x.github.io/HexSchoolHomeWork/Project2_jQuery/">
+    <meta property="og:url" content="https://9scodes.com/">
     <meta property="og:image" content="./image/banner">
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/all.css">
+    <!-- Light Box2 -->
+    <link rel="stylesheet" href="../JS/node_modules/lightbox2/dist/css/lightbox.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XGRCSNVX8W"></script>
     <script>
@@ -33,53 +36,40 @@
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">首頁</a>
-            <a href="#about">關於</a>
-            <a href="#services">服務</a>
+            <a href="#services">技能</a>
             <a href="#portfolio">作品集</a>
-            <a href="#contact">聯繫</a>
+            <a href="#about">關於</a>
+            <a href="#contact">認證</a>
         </nav>
     </header>
 
     <!-- home section design -->
     <section class="home" id="home">
+        <div class="home-img" >
+            <img src="img/DannyHome.png" alt="Danny's Home page image">
+        </div>
         <div class="home-content" >
             <h3>Hello, 我是</h3>
             <h2>譚 旭 發</h2>
             <h3>是一名 <span class="multiple-text"><!--Frontend Deverloper --></span></h3>
-            <p>您好，歡迎光臨！我是一位定居在台灣的越南籍粵語人士，提供一系列服務，包括網頁設計、平面設計、Excel進階教學、越南文至中文的翻譯以及越南市場分析。我熱愛創意，並擅長清晰溝通，致力於提供符合您需求的高質量工作。無論您是想提升在線存在感還是需要數據管理的幫助，我都會竭誠協助。讓我們攜手合作，將您的想法變為現實吧！</p>
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <div class="block">
+                <div class="social-media">
+                    <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
+                    <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
+                    <!-- <a href="#"><i class='bx bxl-instagram-alt' ></i></a> -->
+                    <a href="mailto:dannytan8xtw@gmail.com" ><i class='bx bxl-google' ></i></a>
+                    <a href="https://www.linkedin.com/in/danny-tan-9scodes"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <!-- <a href="./download/Danny_Developer_Designer.pdf" class="btn" target="_blank">下載簡歷</a> -->
             </div>
-            <a href="./download/Danny Tan_Product Manager .pdf" class="btn">下載簡歷</a>
         </div>
 
-        <div class="home-img" style="right: 0; ">
-            <img src="img/DannyAbout.jpg" alt="Danny's Home page image">
-        </div>
+
     </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="mySkill">
-
-        </div>
-
-        <div class="about-content">
-             <h2 class="heading">我的 <span>自傳</span></h2>
-             <!-- <h3>而我是一名 <span class="multiple-text">Frontend Deverloper </span></h3> -->
-             <p>我英文名字是 Danny 擁有豐富的產品專案管理經驗， 在現在的工作中， 我負責自由品牌事業的的行銷企劃從0-1的階段， 透過蒐集市場情報並結合客戶需求， 制定個別ODM方案， 成功提高產品的市場競爭力。</p>
-            <p>「注重細節的科技魂」是同事們對我的封號， 細心謹慎的特質讓我能夠確保每項專案執行的品質， 同時也是網路最新技術與應用趨勢的熱愛者。 
-                </p>
-             <a href="#" class="btn">閱讀更多</a>
-        </div>
-    </section>
-
+    
     <!-- services section design -->
     <section class="services" id="services">
-        <h2 class="heading">我能提供的 <span>服務</span></h2>
+        <h2 class="heading">我的 <span>技能</span></h2>
 
         <div class="services-container">
             <div class="services-box">
@@ -95,19 +85,19 @@
                     <li>定期維護</li>
                 </ul>
                
-                <a href="#" class="btn">探索更多</a>
+                <!-- <a href="#" class="btn">探索更多</a> -->
             </div>
             <div class="services-box">
                 <i class='bx bx-paint' ></i>
                 <h3>圖文設計</h3>
                 <p>專業設計服務，致力於打造獨特且引人注目的視覺內容。無論是品牌標誌、宣傳物料還是社交媒體圖片，我都能以創意和專業手法呈現。讓您的品牌在視覺上脫穎而出，吸引更多目光。</p>
-                <a href="#" class="btn">探索更多</a>
+                <!-- <a href="#" class="btn">探索更多</a> -->
             </div>
             <div class="services-box">
                 <i class='bx bx-line-chart' ></i>
                 <h3>越南市場分析與語言翻譯</h3>
                 <p>作為越南市場分析專家，我深度剖析越南經濟，提供全面報告，助您把握東南亞崛起之機。我專注於行業趨勢和競爭環境，同時提供精準越南語翻譯服務，助您輕鬆跨越語言障礙，成功進軍越南市場。無論您初探或已駐足當地，我致力為您提供專業分析和翻譯支援，攜手開啟成功之門。</p>
-                <a href="#" class="btn">探索更多</a>
+                <!-- <a href="#" class="btn">探索更多</a> -->
             </div>
         </div>
     </section>
@@ -120,62 +110,81 @@
             <div class="portfolio-box">
                 <img src="img/portfolio1.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>HTML & CSS<br>網頁</h4>
+                    <h4>社交媒體版型</h4>
                     <p>Design a website with HTML & CSS, </p>
-                    <a href="./Project1_htmlCss/"><i class='bx bx-link-external' ></i></a>
+                    <a href="./Project1_LinkedIn/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="img/portfolio2.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>jQuery<br>網頁</h4>
+                    <h4>六角學院課程</h4>
                     <p>Apply Light Box2, Go to Top, menu list</p>
-                    <a href="./Project2_jQuery/"><i class='bx bx-link-external' ></i></a>
+                    <a href="./Project2_jQuery/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="img/portfolio3.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>響應式網頁</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
-                    <a href="./Project3_RWD/"><i class='bx bx-link-external' ></i></a>
+                    <h4>響應式網頁-餐廳</h4>
+                    <p>Responsive Web Design for Restaurant with booking menu and signup|login layout</p>
+                    <a href="./Project3_RWD/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="img/portfolio4.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/portfolio5.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>響應式網頁-Netflix</h4>
+                    <p>Responsive Web Design</p>
+                    <a href="./Project4_netflix/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="img/portfolio6.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>響應式網頁-FB layout</h4>
+                    <p>Responsive Web Design</p>
+                    <a href="./Project5_socialbook/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>響應式網頁-電商平台</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
+                    <a href="./Project6_Ecommerce/" target="_blank"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+
 
         </div>
     </section>
 
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="mySkill">
+
+        </div>
+
+        <div class="about-content">
+             <h2 class="heading">About <span>me</span></h2>
+             
+             <p>您好，歡迎光臨！我是一位定居在台灣的越南籍粵語人士，提供一系列服務，包括網頁設計、平面設計、Excel進階教學、越南文至中文的翻譯以及越南市場分析。我熱愛創意，並擅長清晰溝通，致力於提供符合您需求的高質量工作。無論您是想提升在線存在感還是需要數據管理的幫助，我都會竭誠協助。讓我們攜手合作，將您的想法變為現實吧！</p>
+             <p>我英文名字是 Danny 擁有豐富的產品專案管理經驗， 在現在的工作中， 我負責自由品牌事業的的行銷企劃從0-1的階段， 透過蒐集市場情報並結合客戶需求， 制定個別ODM方案， 成功提高產品的市場競爭力。</p>
+            <p>「注重細節的科技魂」是同事們對我的封號， 細心謹慎的特質讓我能夠確保每項專案執行的品質， 同時也是網路最新技術與應用趨勢的熱愛者。 
+                </p>
+            <a href="./download/Danny_Developer_Designer.pdf" class="btn" target="_blank">下載簡歷</a>
+        </div>
+    </section>
+    
     <!-- contact section design -->
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <h2 class="heading">告訴我 <span>您的需求</span></h2>
         <form action="#">
             <div class="input-box">
@@ -189,9 +198,14 @@
             <textarea name="" id="" width="30" rows="10" placeholder="留言"></textarea>
             <input type="submit" value="發送" class="btn">
         </form>
-    </section>
+    </section> -->
 
-
+ <!-- Certification section design -->
+ <section class="contact" id="contact">
+    <h2 class="heading"> <span>認證</span></h2>
+    
+</section>
+    
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
@@ -209,8 +223,10 @@
 
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+    <script src="../JS/node_modules/jquery/dist/jquery.js"></script>
     <!-- custom js cript -->
     <script src="./JS/main.js"></script>
+    <!-- lightbox2 js 一定要再jQuery.js 下面 -->
+    <script src="../JS/node_modules/lightbox2/dist/js/lightbox.js"></script>
 </body>
 </html>

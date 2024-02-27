@@ -1,0 +1,82 @@
+// screen setup
+@mixin pad(){
+   @media (max-width: 768px) {
+     @content
+   }
+};
+
+@mixin padPro(){
+  @media (max-width: 1024px) {
+    @content
+  }
+}
+
+@mixin iphone(){
+    @media  (max-width: 568px) {
+        @content
+    }
+};
+
+@mixin iphoneMini(){
+    @media (max-width: 320px) {
+        @content
+    }
+};
+
+// layout setup
+@mixin flexCol(){
+  display: flex;
+  flex-direction: column;
+};
+
+@mixin flexSB(){
+  display: flex;
+  justify-content: space-between;
+};
+
+//btn setup:
+@mixin btnPrimery{
+  background-color: $btnPrimerycolor;
+  color: $whiteColor;
+  &:hover{
+    box-shadow: 2px 2px 2px rgb( $blackColor, 15%);
+    transform: translate(-1px, -1px);
+    font-weight: 500;
+  }
+  &:active{
+    box-shadow: none;
+    transform: translate(0px, 0px);
+  }
+}
+@mixin btnClose{
+  background-color: rgb( $blackColor, 35%);
+  color: $whiteColor;
+  &:hover{
+    font-weight: 500;
+    box-shadow: 2px 2px 2px rgb( $blackColor, 15%);
+    transform: translate(-1px, -1px);
+  }
+  &:active{
+    transform: translate(0px, 0px);
+    box-shadow: none;
+  }
+}
+
+@mixin btnCart{
+  border: 1px solid $btnPrimerycolor;
+  color: $btnPrimerycolor;
+  border-radius: 5px;
+  cursor: pointer;
+  >*{
+    font-size: 16px;
+    padding: 6px;
+    color: $btnPrimerycolor;
+  }
+  &:hover{
+    background-color: $btnPrimerycolor;
+    color: $mainYellow;
+    >*{
+      color: $mainYellow;
+    }
+  }
+}
