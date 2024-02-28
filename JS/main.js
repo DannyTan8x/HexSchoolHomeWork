@@ -60,3 +60,12 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
   });
+
+// ********** lightbox js **************** 
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'fitImagesInViewport': true,
+    'maxHeight': 500,
+    'disableScrolling' : true,
+  })

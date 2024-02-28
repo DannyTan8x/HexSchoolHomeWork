@@ -29,10 +29,11 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+
 }
 
 section {
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 10rem 9rem 10rem 9rem;
   @include padPro(){
     min-height: auto;
@@ -109,31 +110,37 @@ section {
     margin-left: 10vw;
     border-radius: 20px;
     @include iphone{
-        max-width: 50vw;
+        max-width: 45vw;
     }
   
     /* animation: floatImage 4s ease-in-out infinite; */
-    &::after{
-        content: "xxxxxx";
-        font-size: 500px;
-        width: 100px;
-        height: 100px;
-        border-radius: 40%;
-        background-color: #fff;
+   
+  }
+  .home-img{
+    &::before{
+        content: "";
+        background-color: var(--text-color);
         position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 999;
+        width: 40vw;
+        height: 30vw;
+        left: 30%;
+        top: 10%;
+        z-index: -1;
+        font-size: 500px;
+        border-radius: 10%;
+        filter: blur(250px);
+        opacity: .5;
     }
   }
   .home-content {
     position: absolute;
-    left: 50vw;
-    width: 30vw;
+    left: 45vw;
+    width: 40vw;
     bottom: 100px;
+    text-shadow: 5px 5px 5px var(--bg-color);
     
     @include padPro{
-        width: 40vw;
+        width: 45vw;
     }
     h3 {
       font-size: 3.2rem;
@@ -142,7 +149,7 @@ section {
         font-size: 3rem;
       }
       @include iphone{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
   
       &:nth-of-type(2) {
@@ -257,7 +264,7 @@ span {
 }
 
 .services h2 {
-  margin-bottom: 5rem;
+  margin: 5rem auto;
 }
 
 .services-container {
@@ -350,6 +357,12 @@ span {
   &:hover img {
     transform: scale(1.1);
   }
+  &:hover .portfolio-layer{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--main-color));
+    transition: .5s ease;
+  }
 
   .portfolio-layer {
     position: absolute;
@@ -357,15 +370,40 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+    background-color: var(--second-bg-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items:start;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+    padding: 10px 4rem;
+    transform: translateY(80%);
+    // transition: .5s ease;
+
+    h4 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+      }
+    
+      p {
+        font-size: 1.6rem;
+        margin: .3rem 0 1rem;
+      }
+    
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        background: var(--text-color);
+        border-radius: 50%;
+    
+        i {
+          color: var(--second-bg-color);
+          font-size: 2rem;
+        }
+      }
   }
 
   &:hover .portfolio-layer {
@@ -373,30 +411,35 @@ span {
   }
 }
 
-.portfolio-layer {
-  h4 {
-    font-size: 3rem;
-  }
 
-  p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-  }
-
-  a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-
-    i {
-      color: var(--second-bg-color);
-      font-size: 2rem;
+.certification{
+    h2{
+        margin-bottom: 20px;
     }
-  }
+    .cert_container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .cert_box{
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            // background-color: var(--second-bg-color);
+            border: 1px solid var(--second-bg-color);
+            margin: 10px;
+            text-align: center;
+            transition: 0.5s ease;
+            cursor: pointer;
+            &:hover{
+                border-color: var(--main-color);
+                img{
+                    transform: scale(1.1);
+                }
+            } 
+        
+        }
+    }
 }
 
 .contact {
@@ -518,7 +561,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 7rem;
   }
 
-  .portfolio-container {
+  .portfolio-container, .cert_container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -586,7 +629,7 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 617px) {
-  .portfolio-container {
+  .portfolio-container .cert_container{
     grid-template-columns: 1fr;
   }
 }
