@@ -238,7 +238,10 @@ span {
 }
 
 .about-img img {
-  width: 35vw;
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px var(--bg-color);
+  animation: floatImage 4s ease-in-out infinite;
 }
 
 .heading {
@@ -247,6 +250,10 @@ span {
 }
 
 .about-content {
+    max-width: 60%;
+    @include iphone{
+        max-width: 100%;
+    }
   h2 {
     text-align: left;
     line-height: 1.2;
@@ -379,15 +386,23 @@ span {
     padding: 10px 4rem;
     transform: translateY(80%);
     // transition: .5s ease;
-
+    @include pad{
+        padding: 5px 4rem;
+    }
     h4 {
-        font-size: 3rem;
-        margin-bottom: 5px;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        @include pad{
+            font-size: .1em;
+        }
       }
     
       p {
         font-size: 1.6rem;
         margin: .3rem 0 1rem;
+        @include iphone{
+            display: none;
+        }
       }
     
       a {
