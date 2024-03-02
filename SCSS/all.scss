@@ -11,14 +11,27 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Noto Serif TC', serif;
+  font-family:Arial, Helvetica, sans-serif;
+//   font-family: 'Noto Serif TC', serif;
 }
 
 :root {
-  --bg-color:#1f242d;
-  --second-bg-color:#323946;
-  --text-color:#fff;
-  --main-color:#0ef;
+    --col1:#DCD1C6;
+    --col2:#5c493a;
+    --col3:#769CAF;
+    --col4:#000000;
+    --col5:#7E7D7D;
+    --col6:#B7B5B3;
+    --col7:#DFDFDF;
+    --col8:#F7F7F8;
+  --bg-color:var(--col7);
+  --second-bg-color:var(--col8);
+  --text-color:var(--col4);
+  --main-color:var(--col2);
+//   --bg-color:#1f242d;
+//   --second-bg-color:#323946;
+//   --text-color:#fff;
+//   --main-color:#0ef;
 }
 
 html {
@@ -75,7 +88,7 @@ section {
   overflow: hidden;
   white-space: nowrap;
   font-size: 2.5rem;
-  color: var(--text-color);
+  filter: brightness(0);
   font-weight: 600;
   cursor: default;
 }
@@ -88,7 +101,7 @@ section {
 
   &:hover, &.active {
     color: var(--main-color);
-    text-shadow: 0 0 0.5rem var(--main-color);
+    text-shadow: 0 0 1.5rem var(--main-color);
   }
 }
 
@@ -98,6 +111,9 @@ section {
   display: none;
 }
 
+#home{
+    background-color: #1f242d;
+}
 .home {
   position: relative;
   display: flex;
@@ -119,29 +135,40 @@ section {
   .home-img{
     &::before{
         content: "";
-        background-color: var(--text-color);
+        background-color: #fff;
         position: absolute;
         width: 40vw;
         height: 30vw;
         left: 30%;
         top: 10%;
         z-index: -1;
-        font-size: 500px;
+        // font-size: 500px;
         border-radius: 10%;
-        filter: blur(250px);
-        opacity: .5;
+        filter: blur(200px);
+        opacity: 1.5;
+        @include iphone{
+            width: 40vw;
+            height: 40vw;
+            left: 50%;
+            top: 20%;
+        }
     }
   }
   .home-content {
     position: absolute;
     left: 45vw;
     width: 40vw;
-    bottom: 100px;
-    text-shadow: 5px 5px 5px var(--bg-color);
-    
+    bottom: 15vh;
+    // text-shadow: 5px 5px 5px var(--bg-color);
+    color: var(--text-color);
+    text-shadow: 0 10px 30rem var(--second-bg-color);
     @include padPro{
         width: 45vw;
+        bottom: 10vh;
     }
+    // @include iphone{
+    //     bottom: 10vh;
+    // }
     h3 {
       font-size: 3.2rem;
       font-weight: 700;
@@ -162,6 +189,7 @@ section {
         font-size: 10rem;
         font-weight: 700;
         line-height: 1.3;
+        color: var(--col1);
         @include padPro{
             font-size: 7rem;
         }
@@ -173,9 +201,12 @@ section {
     .block {
 
         text-align: center;
-
-
+        
     }
+ 
+    span {
+        color: var(--col8);
+      }
   }
 }
 span {
@@ -194,16 +225,16 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--main-color);
-  color: var(--main-color);
+  border: 0.2rem solid var(--second-bg-color);
+  color: var(--second-bg-color);
   border-radius: 50%;
   font-size: 2rem;
   margin: 3rem 1rem 3rem 1rem;
   transition: .5s ease;
 
   &:hover {
-    background: var(--main-color);
-    color: var(--second-bg-color);
+    background: var(--second-bg-color);
+    color: var(--main-color);
     box-shadow: 0 0 1rem var(--(main-color));
   }
   @include padPro{
@@ -239,7 +270,7 @@ span {
 
 .about-img img {
   width: 25vw;
-  border-radius: 50%;
+  border-radius: 30% 10%;
   box-shadow: 0 10px 20px var(--bg-color);
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -303,6 +334,7 @@ span {
   i {
     font-size: 7rem;
     color: var(--main-color);
+    margin-bottom: 20px;
   }
 
   h3 {
@@ -320,7 +352,7 @@ span {
     font-size: 1.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 10px;
+    margin-top: 10px;
     margin-bottom: 3rem;
   }
 
@@ -362,7 +394,7 @@ span {
   }
 
   &:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   &:hover .portfolio-layer{
     justify-content: center;
@@ -377,7 +409,8 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--second-bg-color);
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
     display: flex;
     justify-content:flex-start;
     align-items:start;
@@ -391,18 +424,18 @@ span {
     }
     h4 {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin: 1rem 0;
         @include pad{
             font-size: .1em;
+        }
+        @include iphone{
+            font-size: 2rem;
         }
       }
     
       p {
         font-size: 1.6rem;
         margin: .3rem 0 1rem;
-        @include iphone{
-            display: none;
-        }
       }
     
       a {
@@ -445,6 +478,7 @@ span {
             margin: 10px;
             text-align: center;
             transition: 0.5s ease;
+            overflow: hidden;
             cursor: pointer;
             &:hover{
                 border-color: var(--main-color);
@@ -644,7 +678,8 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 617px) {
-  .portfolio-container .cert_container{
+
+  .portfolio-container, .cert_container{
     grid-template-columns: 1fr;
   }
 }
