@@ -58,6 +58,9 @@ section {
   &:nth-child(odd){
     background: var(--second-bg-color);
   }
+  >  h2 {
+    margin: 4rem;
+  }
 }
 
 .header {
@@ -304,9 +307,9 @@ span {
   }
 }
 
-.services h2 {
-  margin: 5rem auto;
-}
+// .services h2 {
+//   margin: 5rem auto;
+// }
 
 .services-container {
   display: flex;
@@ -369,10 +372,6 @@ span {
 
 .portfolio {
   background: var(--second-bg-color);
-
-  h2 {
-    margin-bottom: 4rem;
-  }
 }
 
 .portfolio-container {
@@ -464,9 +463,9 @@ span {
 
 
 .certification{
-    h2{
-        margin-bottom: 20px;
-    }
+    // h2{
+    //     margin: 20px;
+    // }
     .cert_container{
         display: flex;
         justify-content: center;
@@ -499,9 +498,9 @@ span {
 }
 
 .contact {
-  h2 {
-    margin-bottom: 3rem;
-  }
+//   h2 {
+//     margin-bottom: 3rem;
+//   }
 
   form {
     max-width: 70rem;
@@ -679,9 +678,9 @@ input::-webkit-inner-spin-button {
     }
   }
 
-  .services h2, .portfolioh2 {
-    margin-bottom: 3rem;
-  }
+//   .services h2, .portfolio h2 {
+//     margin-bottom: 3rem;
+//   }
 }
 
 @media (max-width: 617px) {
