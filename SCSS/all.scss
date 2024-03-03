@@ -16,7 +16,8 @@
 }
 
 :root {
-    --col1:#DCD1C6;
+    --col1:#ffd29c;
+    --col0:#DCD1C6;
     --col2:#5c493a;
     --col3:#769CAF;
     --col4:#000000;
@@ -147,6 +148,7 @@ section {
         filter: blur(200px);
         opacity: 1.5;
         @include iphone{
+            filter: blur(80px);
             width: 40vw;
             height: 40vw;
             left: 50%;
@@ -158,13 +160,13 @@ section {
     position: absolute;
     left: 45vw;
     width: 40vw;
-    bottom: 15vh;
+    bottom: 25vh;
     // text-shadow: 5px 5px 5px var(--bg-color);
     color: var(--text-color);
     text-shadow: 0 10px 30rem var(--second-bg-color);
     @include padPro{
         width: 45vw;
-        bottom: 10vh;
+        bottom: 12vh;
     }
     // @include iphone{
     //     bottom: 10vh;
@@ -190,6 +192,7 @@ section {
         font-weight: 700;
         line-height: 1.3;
         color: var(--col1);
+        text-shadow: 1px 2px 10px var(--text-color);
         @include padPro{
             font-size: 7rem;
         }
@@ -424,7 +427,7 @@ span {
     }
     h4 {
         font-size: 2rem;
-        margin: 1rem 0;
+        margin: .2em 0 2em 0;
         @include pad{
             font-size: .1em;
         }
@@ -470,20 +473,24 @@ span {
         flex-wrap: wrap;
         gap: 2rem;
         .cert_box{
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 10px;
             border-radius: 10px;
-            // background-color: var(--second-bg-color);
             border: 1px solid var(--second-bg-color);
+            box-shadow: 5px 5px 5px rgba(0,0,0, 20%);
             margin: 10px;
-            text-align: center;
             transition: 0.5s ease;
             overflow: hidden;
             cursor: pointer;
+            img{
+                transform: scale(0.9);
+            }
             &:hover{
                 border-color: var(--main-color);
                 img{
-                    transform: scale(1.1);
+                    transform: scale(1);
                 }
             } 
         
