@@ -25,7 +25,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-XGRCSNVX8W');
     </script>
 
@@ -33,15 +32,14 @@
 <body>
     <!-- header design -->
     <header class="header">
-        <h1><a href="#" class="logo">9scodes.com</a></h1>
+        <h1><a href="#home" class="logo">9scodes.com</a></h1>
         <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">首頁</a>
-            <a href="#services">技能</a>
-            <a href="#portfolio">作品集</a>
-            <a href="#about">關於</a>
-            <a href="#certification">認證</a>
-        </nav>
+        <ul class="navbar">
+        </ul>
+        <select name="lang" id="langNum">
+            <option value=1>EN</option>
+            <option value=0>中文</option>
+            </select>
     </header>
 
     <!-- home section design -->
@@ -49,122 +47,27 @@
         <div class="home-img" >
             <img src="img/DannyHome.png" alt="Danny's Home page image">
         </div>
-        <div class="home-content" >
-            <h3>Hello, 我是</h3>
-            <h2>譚 旭 發</h2>
-            <h3>是一名 <span class="multiple-text"><!--Frontend Deverloper --></span></h3>
-            <div class="block">
-                <div class="social-media">
-                    <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
-                    <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
-                    <!-- <a href="#"><i class='bx bxl-instagram-alt' ></i></a> -->
-                    <a href="mailto:dannytan8xtw@gmail.com" ><i class='bx bxl-google' ></i></a>
-                    <a href="https://www.linkedin.com/in/danny-tan-9scodes"><i class='bx bxl-linkedin' ></i></a>
-                </div>
-                <!-- <a href="./download/Danny_Developer_Designer.pdf" class="btn" target="_blank">下載簡歷</a> -->
+        <div class="home-content">
+            <div class="changetext">
+            </div>
+            <br>
+            <div class="social-media">
+                <a href="mailto:dannytan8xtw@gmail.com" ><i class='bx bxl-google' ></i></a>
+                <a href="https://www.linkedin.com/in/danny-tan-9scodes"><i class='bx bxl-linkedin' ></i></a>
             </div>
         </div>
-
-
     </section>
     
     <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading">我的 <span>技能</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>網頁開發</h3>
-                <p>歡迎來到我的個人網頁！我是一位網站設計師，致力於為您打造出獨一無二、引人入勝的網站體驗。我的設計理念融合了創意與功能，以確保您的網站不僅具有視覺上的吸引力，還能提供卓越的使用體驗。 </p>
-                <span>我的服務包括：</span>
-                <ul>
-                    <li>獨特設計</li>
-                    <li>響應式設計</li>
-                    <li>用戶友好性</li>
-                    <li>效能優化</li>
-                    <li>定期維護</li>
-                </ul>
-               
-                <!-- <a href="#" class="btn">探索更多</a> -->
-            </div>
-            <div class="services-box">
-                <i class='bx bx-paint' ></i>
-                <h3>圖文設計</h3>
-                <p>專業設計服務，致力於打造獨特且引人注目的視覺內容。無論是品牌標誌、宣傳物料還是社交媒體圖片，我都能以創意和專業手法呈現。讓您的品牌在視覺上脫穎而出，吸引更多目光。</p>
-                <!-- <a href="#" class="btn">探索更多</a> -->
-            </div>
-            <div class="services-box">
-                <i class='bx bx-line-chart' ></i>
-                <h3>越南市場分析與語言翻譯</h3>
-                <p>作為越南市場分析專家，我深度剖析越南經濟，提供全面報告，助您把握東南亞崛起之機。我專注於行業趨勢和競爭環境，同時提供精準越南語翻譯服務，助您輕鬆跨越語言障礙，成功進軍越南市場。無論您初探或已駐足當地，我致力為您提供專業分析和翻譯支援，攜手開啟成功之門。</p>
-                <!-- <a href="#" class="btn">探索更多</a> -->
-            </div>
-        </div>
+    <section class="services" id="skill">
+        <h2 class="heading"></h2>
+        <div class="services-container"></div>
     </section>
     
     <!-- Portfolio section design -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">最新 <span>作品</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="img/portfolio1.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>HTML切版 - Linkedin</h4>
-                    <p>Design a website with HTML & CSS, </p>
-                    <a href="./Project1_LinkedIn/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/portfolio2.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>六角學院課程</h4>
-                    <p>Apply Light Box2, Go to Top, menu list</p>
-                    <a href="./Project2_jQuery/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/portfolio3.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>響應式設計-餐廳</h4>
-                    <p>Responsive Web Design for Restaurant with booking menu and signup|login layout</p>
-                    <a href="./Project3_RWD/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/portfolio4.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>響應式設計-Netflix</h4>
-                    <p>Responsive Web Design</p>
-                    <a href="./Project4_netflix/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/portfolio5.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>響應式設計-FB layout</h4>
-                    <p>Responsive Web Design</p>
-                    <a href="./Project5_socialbook/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/portfolio6.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>響應式設計-電商平台</h4>
-                    <p>Responsive Web Design for E-commerce website </p>
-                    <a href="./Project6_Ecommerce/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-
-
-        </div>
+        <h2 class="heading"></h2>
+        <div class="portfolio-container"></div>
     </section>
 
     <!-- about section design -->
@@ -172,17 +75,38 @@
         <div class="about-img">
             <img src="./img/Frame 1.svg" alt="">
         </div>
-
         <div class="about-content">
-             <h2 class="heading">About <span>me</span></h2>
-             
-             <p>我是Danny｜擁有豐富設計和資料分析能力的π型人才
-                憑藉著深厚的設計實力和深入的數據分析專長，我能夠創造出引人注目且功能出眾的產品，也是我工作中的獨特優勢。</p>
-             <p>在過去的工作中，我經常利用趨勢軟體和數據分析工具來深入了解市場需求，並以此作為設計方向的依據。我相信，優秀的產品設計不僅能夠滿足客戶的期望，還能夠解決客戶面臨的實際問題。我期待著在新的挑戰中，繼續發揮我的設計和資料分析技能，為公司帶來更多價值。</p>
-            <a href="./download/Danny_Developer_Designer.pdf" class="btn" target="_blank">下載簡歷</a>
+             <h2 class="heading"></h2>
         </div>
     </section>
-    
+  
+
+ <!-- Certification section design -->
+ <section class="certification" id="certification">
+    <h2 class="heading"> <span>認證</span></h2>
+    <div class="cert_container">
+
+            <!-- <a class="cert_box" href="./Cert/cert_html_css.png" data-lightbox="certBox" data-title="HTML_CSS Certification">
+                <img src="./Cert/1HTMLCSs.png" alt="HTML_CSS Certification">
+            </a>
+
+            <a class="cert_box" href="./Cert/cert_jquery.png" data-lightbox="certBox" data-title="jQuery Certification">
+                <img src="./Cert/1jQuery.png" alt="jQuery Certification"></a>
+            </a>
+
+            <a class="cert_box" href="./Cert/cert_RWD.png" data-lightbox="certBox" data-title="Responsive Web Design Certification">
+                <img src="./Cert/1RWD.png" alt="Responsive Web Design Certification"></a>
+            </a>
+
+            <a class="cert_box" href="#0">
+                <h3>javascript , react.js And more ......</h3>
+            </a> -->
+
+
+    </div>
+</section>
+
+  
     <!-- contact section design -->
     <!-- <section class="contact" id="contact">
         <h2 class="heading">告訴我 <span>您的需求</span></h2>
@@ -199,31 +123,6 @@
             <input type="submit" value="發送" class="btn">
         </form>
     </section> -->
-
- <!-- Certification section design -->
- <section class="certification" id="certification">
-    <h2 class="heading"> <span>認證</span></h2>
-    <div class="cert_container">
-
-            <a class="cert_box" href="./Cert/cert_html_css.png" data-lightbox="certBox" data-title="HTML_CSS Certification">
-                <img src="./Cert/1HTMLCSs.png" alt="HTML_CSS Certification">
-            </a>
-
-            <a class="cert_box" href="./Cert/cert_jquery.png" data-lightbox="certBox" data-title="jQuery Certification">
-                <img src="./Cert/1jQuery.png" alt="jQuery Certification"></a>
-            </a>
-
-            <a class="cert_box" href="./Cert/cert_RWD.png" data-lightbox="certBox" data-title="Responsive Web Design Certification">
-                <img src="./Cert/1RWD.png" alt="Responsive Web Design Certification"></a>
-            </a>
-
-            <!-- <a class="cert_box" href="./Cert/cert_RWD.png" data-lightbox="certBox" data-title="Responsive Web Design Certification">
-                <img src="./Cert/1RWD.png" alt="Responsive Web Design Certification"></a>
-            </a> -->
-
-
-    </div>
-</section>
     
     <!-- footer design -->
     <footer class="footer">
@@ -243,6 +142,7 @@
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./JS/node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <!-- custom js cript -->
     <script src="./JS/main.js"></script>
     <!-- lightbox2 js 一定要再jQuery.js 下面 -->
