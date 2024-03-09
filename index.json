@@ -60,7 +60,7 @@
             },
             {
                 "img":["img/portfolio6.png","img/portfolio6.png"],
-                "h4":["響應式設計-電商平台","RWD design with E-commerce website"],
+                "h4":["響應式設計-電商平台","RWD design with E-commerce"],
                 "description":["<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
             }
             ]
