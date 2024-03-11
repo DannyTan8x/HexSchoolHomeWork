@@ -8,7 +8,7 @@ let aboutContent = document.querySelector('.about-content');
 let certContainer = document.querySelector('.cert_container');
 let sections = document.querySelectorAll('section');
 let langOption = document.querySelector('#langNum');
-const typedtext = [['前端工程師', '設計師', '產品經理', '越南市場分析師'],['Deverloper', 'Designer', 'Product Manager', 'VN Market Analyst']]
+const typedtext = [['前端工程師', '設計師', '產品經理', '越南市場分析師'],['Developer', 'Designer', 'Product Manager', 'VN Market Analyst']]
 let langNum = 1;
 
 render();
