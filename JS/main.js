@@ -144,7 +144,7 @@ ScrollReveal({
 });
 
     ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-    ScrollReveal().reveal(' .services-container, .portfolio-box, .contact form, .cert_box', { origin: 'bottom' });
+    ScrollReveal().reveal('.services-container,.portfolio-container, .portfolio-box, .contact form,.cert_container, .cert_box', { origin: 'bottom' });
     ScrollReveal().reveal('.home-img, .home-content h1, .about-img', { origin: 'left' });
     ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
