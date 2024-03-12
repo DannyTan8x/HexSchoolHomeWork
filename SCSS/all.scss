@@ -142,9 +142,12 @@ section {
       display: inline-block;
       font-size: var(--fontsizeLarg);
       color: var(--text-color);
-      width: 5em;
+      width: 6em;
       text-align: center;
       transition: .3s;
+      @include padPro{
+        width: 5em;
+      }
 
       @include padMini {
         width: 8em;
@@ -198,6 +201,9 @@ section {
   display: flex;
   align-items: end;
   padding-bottom: 0;
+  @include iphone{
+    min-height: 60vh;
+  }
 
   .home-img {
     img {
@@ -246,7 +252,7 @@ section {
       }
 
       @include iphone {
-        filter: blur(80px);
+        filter: blur(60px);
         width: 40vw;
         height: 40vw;
         left: 50%;
@@ -278,6 +284,7 @@ section {
       display: inline;
       font-weight: 700;
       font-size: var(--fontsizeLarger);
+      text-shadow: 1px 2px 5px var(--main-color);
       @include iphone{
         font-size: var(--fontsizeLarg);
       }
@@ -316,21 +323,25 @@ section {
   width: 10em;
   a {
     display: inline-flex;
+    box-shadow: 1px 1px 5px var(--col1);
     justify-content: center;
     align-items: center;
     width: var(--fontsizeLarg);
     height: var(--fontsizeLarg);
     background: transparent;
-    border: 0.2rem solid var(--second-bg-color);
+    border: 0.12em solid var(--second-bg-color);
     color: var(--second-bg-color);
     border-radius: 50%;
+    padding: .7em;
     font-size: var(--fontsizeLarger);
     transition: .5s ease;
 
     &:hover {
-      background: var(--second-bg-color);
-      color: var(--main-color);
-      box-shadow: 0 0 1rem var(--(main-color));
+      background: var(--main-color);
+      // color: transparent;
+      border-color: transparent;
+      text-shadow: unset;
+      box-shadow: unset;
     }
 
   }
@@ -505,6 +516,7 @@ section {
       }
   
       .portfolio-layer {
+        font-size: medium;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -513,23 +525,22 @@ section {
         background-color: var(--main-color);
         color: var(--second-bg-color);
         display: flex;
-        justify-content: flex-start;
-        align-items: start;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
         text-align: center;
-        padding: 10px 4rem;
+        padding: .5em 2em;
         transform: translateY(80%);
-  
-        // transition: .5s ease;
+        
         @include padAir {
           padding: 5px 4rem;
         }
   
         h4 {
-          font-size: var(--fontsizeLarger);
-          margin: .2em 0 2em 0;
+          font-size: var(--fontsizeLarg);
+          margin: .2em 0 1em 0;
   
-          @include padAir {
+          @include padPro {
             font-size: var(--fontsizeSmall);
           }
   
@@ -539,16 +550,21 @@ section {
         }
   
         p {
-          font-size: var(--fontsizeLarg);
-          margin: .3rem 0 1rem;
+          font-size: var(--fontsizeMideum);
+          margin: .3rem 0 1em;
+          @include padPro{
+            font-size: var(--fontsizeSmall);
+          }
+          @include iphone{
+            display: none;
+          }
         }
   
         a {
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          width: 5rem;
-          height: 5rem;
+          padding: 1em;
           background: var(--text-color);
           border-radius: 50%;
   

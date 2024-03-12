@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="我是Danny｜擁有豐富設計和資料分析能力的π型人才 憑藉著深厚的設計實力和深入的數據分析專長，我能夠創造出引人注目且功能出眾的產品，也是我工作中的獨特優勢。">
     <link rel="icon" href="./img/9scodes_icon.svg" type="image/x-icon">
-    <title>Danny Tan Portfolio</title>
+    <title>9sCodes</title>
     <!-- facebook share setting -->
     <meta property="og:title" content="Danny Tan Portfolio">
     <meta property="og:description" content="Danny Tan Portfolio">
@@ -30,20 +30,20 @@
 
 </head>
 <body>
-    <!-- header design -->
-    <header class="header">
-        <h1><a href="#home" class="logo">9scodes.com</a></h1>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <ul class="navbar">
-        </ul>
-        <select name="lang" id="langNum">
-            <option value=1>EN</option>
-            <option value=0>中文</option>
-            </select>
-    </header>
-
+    
     <!-- home section design -->
     <section class="home" id="home">
+        <!-- header design -->
+        <header class="header">
+            <h1><a href="#home" class="logo">9scodes.com</a></h1>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <ul class="navbar">
+            </ul>
+            <select name="lang" id="langNum">
+                <option value=1>EN</option>
+                <option value=0>中文</option>
+                </select>
+        </header>
         <div class="home-img" >
             <img src="img/DannyHome.png" alt="Danny's Home page image">
         </div>
@@ -85,24 +85,6 @@
  <section class="certification" id="certification">
     <h2 class="heading"> <span>認證</span></h2>
     <div class="cert_container">
-
-            <!-- <a class="cert_box" href="./Cert/cert_html_css.png" data-lightbox="certBox" data-title="HTML_CSS Certification">
-                <img src="./Cert/1HTMLCSs.png" alt="HTML_CSS Certification">
-            </a>
-
-            <a class="cert_box" href="./Cert/cert_jquery.png" data-lightbox="certBox" data-title="jQuery Certification">
-                <img src="./Cert/1jQuery.png" alt="jQuery Certification"></a>
-            </a>
-
-            <a class="cert_box" href="./Cert/cert_RWD.png" data-lightbox="certBox" data-title="Responsive Web Design Certification">
-                <img src="./Cert/1RWD.png" alt="Responsive Web Design Certification"></a>
-            </a>
-
-            <a class="cert_box" href="#0">
-                <h3>javascript , react.js And more ......</h3>
-            </a> -->
-
-
     </div>
 </section>
 
@@ -142,10 +124,10 @@
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./JS/node_modules/jquery/dist/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <!-- custom js cript -->
-    <script src="./JS/main.js"></script>
+    <script src="./JS/node_modules/axios/dist/axios.js"></script>
     <!-- lightbox2 js 一定要再jQuery.js 下面 -->
     <script src="./JS/node_modules/lightbox2/dist/js/lightbox.js"></script>
+    <!-- custom js cript -->
+    <script src="./JS/main.js"></script>
 </body>
 </html>

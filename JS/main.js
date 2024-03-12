@@ -11,7 +11,17 @@ let langOption = document.querySelector('#langNum');
 const typedtext = [['前端工程師', '設計師', '產品經理', '越南市場分析師'],['Deverloper', 'Designer', 'Product Manager', 'VN Market Analyst']]
 let langNum = 1;
 
+// ********** lightbox js **************** 
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'fitImagesInViewport': true,
+    'maxHeight': 500,
+    'disableScrolling' : true,
+});
+
 render();
+
 
 function render(){
     axios.get("../index.json").then(function(res){
@@ -25,7 +35,7 @@ function render(){
         navLinks = document.querySelectorAll('.navbar li a');
         langOption = document.querySelector('#langNum');
         typeAsA(langNum);
-        ScrollRevealAction();
+
     });
     //讀取 =》 組合菜單HTML
     function renderNav(navdata){
@@ -36,12 +46,10 @@ function render(){
         });
         navbar.innerHTML =  str;
     };
-
     function renderHome(navdata){
         homeContent.innerHTML = `<h3>${navdata.homeContent.hello[langNum]}</h3>
         <h2>${navdata.homeContent.myName[langNum]}</h2><h3>${navdata.homeContent.Im[langNum]} <span class="multiple-text"></span></h3>`
     };
-
     function renderSkill(navdata){
         let skillTitle = document.querySelector('.services .heading');
         skillTitle.innerHTML = navdata.skillContent.title[langNum];
@@ -60,26 +68,25 @@ function render(){
         portfolioTitle.innerHTML = navdata.portfolioContent.title[langNum];
         let str = '';
         navdata.portfolioContent.boxItems.forEach(function(item){
-            console.log(item)
             str = str + `<div class="portfolio-box"><img src="${item.img[langNum]}" alt="${item.h4[langNum]}"><div class="portfolio-layer"><h4>${item.h4[langNum]}</h4>${item.description[langNum]}</div></div>`
         });
         portfolioContainer.innerHTML = str
     }
+    function renderAbout(navdata){
+        aboutContent.innerHTML = `<h2 class="heading">${navdata.abouteContent.title[langNum]}</h2>${navdata.abouteContent.description[langNum]} `
+    };
     function renderCert(navdata){
         let certTitle = document.querySelector('.certification .heading');
         certTitle.innerHTML = navdata.certContent.title[langNum];
         let str = '';
         navdata.certContent.boxItems.forEach(function(item){
-            console.log(item)
             str = str + ` <a class="cert_box" href="${item.imgLage[langNum]}" data-lightbox="certBox" data-title="${item.title[langNum]}">
             <img src="${item.thumbnail[langNum]}" alt="${item.title[langNum]}">
         </a>`
         });
         certContainer.innerHTML = str
     }
-    function renderAbout(navdata){
-        aboutContent.innerHTML = `<h2 class="heading">${navdata.abouteContent.title[langNum]}</h2>${navdata.abouteContent.description[langNum]} `
-    };
+
 
 };
 
@@ -129,20 +136,17 @@ window.onscroll = () =>{
 };
 
 // ********** Scroll reveal **************** 
-function ScrollRevealAction(){
-    ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-    ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .cert_box', { origin: 'bottom' });
-    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-}
-
 ScrollReveal({ 
-    // reset: true, 
+    reset: true, 
     distance: '80px',
     duration: 2000,
     delay: 200
 });
 
+    ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+    ScrollReveal().reveal(' .services-container, .portfolio-box, .contact form, .cert_box', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-img, .home-content h1, .about-img', { origin: 'left' });
+    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 // ********** typed js **************** 
@@ -156,11 +160,3 @@ function typeAsA (langNum) {
       });
 }
 
-// ********** lightbox js **************** 
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'fitImagesInViewport': true,
-    'maxHeight': 500,
-    'disableScrolling' : true,
-  });

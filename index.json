@@ -46,21 +46,21 @@
             {
                 "img":["img/portfolio3.png","img/portfolio3.png"],
                 "h4":["響應式設計-餐廳","RWD design for Restaurants"],
-                "description":["<p>Responsive Web Design for Restaurant with booking menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design for Restaurant with booking menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
+                "description":["<p>RWD for Restaurant with menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>RWD for Restaurant with menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
             },
             {
                 "img":["img/portfolio4.png","img/portfolio4.png"],
-                "h4":["響應式設計-Netflix","RWD design with Netflix layout"],
+                "h4":["響應式設計-電影串流","RWD design for Movies Stream"],
                 "description":["<p>Responsive Web Design</p><a href='./Project4_netflix/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design</p><a href='./Project4_netflix/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
             },
             {
                 "img":["img/portfolio5.png","img/portfolio5.png"],
-                "h4":["響應式設計-FB layout","RWD design with Facebook layout"],
+                "h4":["響應式設計-社群媒體","RWD design for Social Media"],
                 "description":["<p>Responsive Web Design</p><a href='./Project5_socialbook/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design</p><a href='./Project5_socialbook/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
             },
             {
                 "img":["img/portfolio6.png","img/portfolio6.png"],
-                "h4":["響應式設計-電商平台","RWD design with E-commerce"],
+                "h4":["響應式設計-電商平台","RWD design for E-commerce"],
                 "description":["<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
             }
             ]
