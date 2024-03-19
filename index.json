@@ -86,6 +86,11 @@
                 "imgLage":["./Cert/cert_RWD.png","./Cert/cert_RWD.png"],
                 "thumbnail":["./Cert/1RWD.png","./Cert/1RWD.png"],
                 "title":["響應式網頁設計認證","Responsive Web Design Certification"]
+            },
+            {
+                "imgLage":["./Cert/cert_RWD.png","./Cert/cert_javarscript.png"],
+                "thumbnail":["./Cert/1RWD.png","./Cert/1javascript.png"],
+                "title":["響應式網頁設計認證","Responsive Web Design Certification"]
             }
         ]
         }
