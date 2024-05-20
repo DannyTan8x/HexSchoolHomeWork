@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/album" element={<AlbumLayout />}>
-            {/* 直接寫 index 是預設為主頁面*/}
+            {/* 直接寫 index  是預設為主頁面*/}
             <Route index element={<AlbumIndex />}></Route>
             {/* 動態路由 傳入：id 上網站，可以任意命名*/}
             <Route path=":id" element={<AlbumPhoto />}></Route>
