@@ -1,28 +1,32 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar start-0 end-0 z-3 navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <button className="navbar-brand btn" href="#">
-          Navbar
-        </button>
+        <button className="navbar-brand btn">Navbar</button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
+              <NavLink
+                className={({ isActive }) => {
+                  // console.log("NavLink", isActive);
+                  return `nav-link ${isActive ? "active" : ""}`;
+                }}
+                to="/"
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/album">
+              <NavLink className="nav-link" to="/album">
                 Album
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

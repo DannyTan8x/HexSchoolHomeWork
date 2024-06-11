@@ -19,6 +19,9 @@ export default function AlbumLayout() {
   return (
     <div className="row">
       <div className="col-4">
+        <p>
+          <Link to="search">搜尋頁面</Link>
+        </p>
         <Link to="/album">相簿首頁</Link>
         <nav className="nav flex-column">
           {list.map((item) => {
