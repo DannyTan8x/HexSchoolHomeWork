@@ -1,97 +1,140 @@
 {
-    "navbarMenu": [
-        {"home": ["首頁", "Home"]},
-        {"skill": ["技能", "Skills"]},
-        {"portfolio": ["作品集", "Portfolio"]},
-        {"about": ["關於", "About"]},
-        {"certification": ["認證", "Certification"]}
-    ],
-    "homeContent":{
-        "hello": ["Hello, 我是", "Hello I'm"],
-        "myName" :["譚 旭 發","Danny Tan"],
-        "Im":["是一名","As a"]
-    },
-    "skillContent":{
-        "title":["我的 <span>技能</span>","My <span>Skills</span>"],
-        "boxItems":[
-            {
-                "icon":["<i class='bx bx-code-alt'></i>","<i class='bx bx-code-alt'></i>"],
-                "h3":["網頁開發","Web Development"],
-                "description":["<p>歡迎來到我的個人網頁！我是一位網站設計師，致力於為您打造出獨一無二、引人入勝的網站體驗。我的設計理念融合了創意與功能，以確保您的網站不僅具有視覺上的吸引力，還能提供卓越的使用體驗。 </p><span>我的服務包括：</span><ul><li>獨特設計</li><li>響應式設計</li><li>用戶友好性</li><li>效能優化</li><li>定期維護</li></ul>","<p>Welcome to my personal webpage! I'm a website designer dedicated to creating a unique and engaging website experience for you. My design concepts blend creativity with functionality to ensure your website is not only visually appealing but also provides a great user experience. </p><span>My services include: </span><ul><li>Unique design</li><li>Responsive design</li><li>User-friendliness</li><li >Performance optimization</li><li>Regular maintenance</li></ul>"]
-            },
-            {
-                "icon":["<i class='bx bx-paint'></i>","<i class='bx bx-paint'></i>"],
-                "h3":["圖文設計","Graphic Design"],
-                "description":["<p>專業設計服務，致力於打造獨特且引人注目的視覺內容。無論是品牌標誌、宣傳物料還是社交媒體圖片，我都能以創意和專業手法呈現。讓您的品牌在視覺上脫穎而出，吸引更多目光。</p>","<p>Professional design services dedicated to creating unique and eye-catching visual content. Whether it's a brand logo, promotional materials or social media graphics, I can deliver them creatively and professionally. Make your brand visually stand out and attract more attention. </p>"]
-            },
-            {
-                "icon":["<i class='bx bx-line-chart'></i>","<i class='bx bx-line-chart'></i>"],
-                "h3":["越南市場分析","Vietnam market analysis"],
-                "description":["<p>作為越南市場分析專家，我深度剖析越南經濟，提供全面報告，助您把握東南亞崛起之機。我專注於行業趨勢和競爭環境，同時提供精準越南語翻譯服務，助您輕鬆跨越語言障礙，成功進軍越南市場。無論您初探或已駐足當地，我致力為您提供專業分析和翻譯支援，攜手開啟成功之門。</p>","<p>As a market analysis expert for the Vietnamese market, I provide comprehensive reports and precise Vietnamese translation services. Let me help you capitalize on Southeast Asia's rising opportunities by navigating industry trends and competitive landscapes. Whether you're new or established, I'm here to guide you towards success.</p>"]
-            }]
-    },
-    "portfolioContent":{
-        "title":["最新 <span>作品</span>","Latest <span>Portfolio</span>"],
-        "boxItems":[
-            {
-                "img":["img/portfolio1.png","img/portfolio1.png"],
-                "h4":["HTML切版 - Linkedin","Linkedin Layout"],
-                "description":["<p>Design a website with HTML & CSS, </p><a href='./Project1_LinkedIn/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Design a website with HTML & CSS, </p><a href='./Project1_LinkedIn/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
-            },
-            {
-                "img":["img/portfolio2.png","img/portfolio2.png"],
-                "h4":["六角學院課程","Hexschool Project"],
-                "description":["<p>Apply Light Box2, Go to Top, menu list</p><a href='./Project2_jQuery/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Apply Light Box2, Go to Top, menu list</p><a href='./Project2_jQuery/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
-            },
-            {
-                "img":["img/portfolio3.png","img/portfolio3.png"],
-                "h4":["響應式設計-餐廳","RWD design for Restaurants"],
-                "description":["<p>RWD for Restaurant with menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>RWD for Restaurant with menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
-            },
-            {
-                "img":["img/portfolio4.png","img/portfolio4.png"],
-                "h4":["響應式設計-電影串流","RWD design for Movies Stream"],
-                "description":["<p>Responsive Web Design</p><a href='./Project4_netflix/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design</p><a href='./Project4_netflix/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
-            },
-            {
-                "img":["img/portfolio5.png","img/portfolio5.png"],
-                "h4":["響應式設計-社群媒體","RWD design for Social Media"],
-                "description":["<p>Responsive Web Design</p><a href='./Project5_socialbook/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design</p><a href='./Project5_socialbook/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
-            },
-            {
-                "img":["img/portfolio6.png","img/portfolio6.png"],
-                "h4":["響應式設計-電商平台","RWD design for E-commerce"],
-                "description":["<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>","<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>"]
-            }
-            ]
-    },
-    "abouteContent":{
-        "title": ["關注 <span>我</span>", "About <span>me</span>"],
-        "description" :["<p>我是Danny｜擁有豐富設計和資料分析能力的π型人才憑藉著深厚的設計實力和深入的數據分析專長，我能夠創造出引人注目且功能出眾的產品，也是我工作中的獨特優勢。</p><p>在過去的工作中，我經常利用趨勢軟體和數據分析工具來深入了解市場需求，並以此作為設計方向的依據。我相信，優秀的產品設計不僅能夠滿足客戶的期望，還能夠解決客戶面臨的實際問題。我期待著在新的挑戰中，繼續發揮我的設計和資料分析技能，為公司帶來更多價值。</p><a href='./download/Danny_Developer_Designer.pdf' class='btn' target='_blank'>下載簡歷</a>","<p>I am Danny｜A π-shaped talent with rich design and data analysis capabilities. With my deep design strength and in-depth data analysis expertise, I am able to create eye-catching and functional products, which is also unique in my work. Advantage. </p><p>In my past work, I often used trend software and data analysis tools to gain an in-depth understanding of market needs and used this as a basis for design direction. I believe that excellent product design not only meets customer expectations, but also solves real problems faced by customers. I look forward to continuing to use my design and data analysis skills in new challenges to bring more value to the company. </p><a href='./download/Danny_Developer_Designer.pdf' class='btn' target='_blank'>Download CV</a>"]
-    },
-    "certContent":{
-        "title":["<span>認證</span>","<span>Certification</span>"],
-        "boxItems":[
-            {
-                "imgLage":["./Cert/cert_html_css.png","./Cert/cert_html_css.png"],
-                "thumbnail":["./Cert/1HTMLCSs.png","./Cert/1HTMLCSs.png"],
-                "title":["HTML_CSS 認證","HTML_CSS Certification"]
-            },
-            {
-                "imgLage":["./Cert/cert_jquery.png","./Cert/cert_jquery.png"],
-                "thumbnail":["./Cert/1jQuery.png","./Cert/1jQuery.png"],
-                "title":["jQuery 認證","jQuery Certification"]
-            },
-            {
-                "imgLage":["./Cert/cert_RWD.png","./Cert/cert_RWD.png"],
-                "thumbnail":["./Cert/1RWD.png","./Cert/1RWD.png"],
-                "title":["響應式網頁設計認證","Responsive Web Design Certification"]
-            },
-            {
-                "imgLage":["./Cert/cert_javarscript.png","./Cert/cert_javarscript.png"],
-                "thumbnail":["./Cert/1javascript.png","./Cert/1javascript.png"],
-                "title":["JavaScript 必修篇 - 前端修練全攻略認證","JavaScript Certification"]
-            }
+  "navbarMenu": [
+    { "home": ["首頁", "Home"] },
+    { "skill": ["技能", "Skills"] },
+    { "portfolio": ["作品集", "Portfolio"] },
+    { "about": ["關於", "About"] },
+    { "certification": ["認證", "Certification"] }
+  ],
+  "homeContent": {
+    "hello": ["Hello, 我是", "Hello I'm"],
+    "myName": ["譚 旭 發", "Danny Tan"],
+    "Im": ["是一名", "As a"]
+  },
+  "skillContent": {
+    "title": ["我的 <span>技能</span>", "My <span>Skills</span>"],
+    "boxItems": [
+      {
+        "icon": [
+          "<i class='bx bx-code-alt'></i>",
+          "<i class='bx bx-code-alt'></i>"
+        ],
+        "h3": ["網頁開發", "Web Development"],
+        "description": [
+          "<p>歡迎來到我的個人網頁！我是一位網站設計師，致力於為您打造出獨一無二、引人入勝的網站體驗。我的設計理念融合了創意與功能，以確保您的網站不僅具有視覺上的吸引力，還能提供卓越的使用體驗。 </p><span>我的服務包括：</span><ul><li>獨特設計</li><li>響應式設計</li><li>用戶友好性</li><li>效能優化</li><li>定期維護</li></ul>",
+          "<p>Welcome to my personal webpage! I'm a website designer dedicated to creating a unique and engaging website experience for you. My design concepts blend creativity with functionality to ensure your website is not only visually appealing but also provides a great user experience. </p><span>My services include: </span><ul><li>Unique design</li><li>Responsive design</li><li>User-friendliness</li><li >Performance optimization</li><li>Regular maintenance</li></ul>"
         ]
-        }
+      },
+      {
+        "icon": ["<i class='bx bx-paint'></i>", "<i class='bx bx-paint'></i>"],
+        "h3": ["圖文設計", "Graphic Design"],
+        "description": [
+          "<p>專業設計服務，致力於打造獨特且引人注目的視覺內容。無論是品牌標誌、宣傳物料還是社交媒體圖片，我都能以創意和專業手法呈現。讓您的品牌在視覺上脫穎而出，吸引更多目光。</p>",
+          "<p>Professional design services dedicated to creating unique and eye-catching visual content. Whether it's a brand logo, promotional materials or social media graphics, I can deliver them creatively and professionally. Make your brand visually stand out and attract more attention. </p>"
+        ]
+      },
+      {
+        "icon": [
+          "<i class='bx bx-line-chart'></i>",
+          "<i class='bx bx-line-chart'></i>"
+        ],
+        "h3": ["越南市場分析", "Vietnam market analysis"],
+        "description": [
+          "<p>作為越南市場分析專家，我深度剖析越南經濟，提供全面報告，助您把握東南亞崛起之機。我專注於行業趨勢和競爭環境，同時提供精準越南語翻譯服務，助您輕鬆跨越語言障礙，成功進軍越南市場。無論您初探或已駐足當地，我致力為您提供專業分析和翻譯支援，攜手開啟成功之門。</p>",
+          "<p>As a market analysis expert for the Vietnamese market, I provide comprehensive reports and precise Vietnamese translation services. Let me help you capitalize on Southeast Asia's rising opportunities by navigating industry trends and competitive landscapes. Whether you're new or established, I'm here to guide you towards success.</p>"
+        ]
+      }
+    ]
+  },
+  "portfolioContent": {
+    "title": ["最新 <span>作品</span>", "Latest <span>Portfolio</span>"],
+    "boxItems": [
+      {
+        "img": ["img/portfolio1.png", "img/portfolio1.png"],
+        "h4": ["HTML切版 - Linkedin", "Linkedin Layout"],
+        "description": [
+          "<p>Design a website with HTML & CSS, </p><a href='./Project1_LinkedIn/' target='_blank'><i class='bx bx-link-external' ></i></a>",
+          "<p>Design a website with HTML & CSS, </p><a href='./Project1_LinkedIn/' target='_blank'><i class='bx bx-link-external' ></i></a>"
+        ]
+      },
+      {
+        "img": ["img/portfolio2.png", "img/portfolio2.png"],
+        "h4": ["六角學院課程", "Hexschool Project"],
+        "description": [
+          "<p>Apply Light Box2, Go to Top, menu list</p><a href='./Project2_jQuery/' target='_blank'><i class='bx bx-link-external' ></i></a>",
+          "<p>Apply Light Box2, Go to Top, menu list</p><a href='./Project2_jQuery/' target='_blank'><i class='bx bx-link-external' ></i></a>"
+        ]
+      },
+      {
+        "img": ["img/portfolio3.png", "img/portfolio3.png"],
+        "h4": ["響應式設計-餐廳", "RWD design for Restaurants"],
+        "description": [
+          "<p>RWD for Restaurant with menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>",
+          "<p>RWD for Restaurant with menu and signup|login layout</p><a href='./Project3_RWD/' target='_blank'><i class='bx bx-link-external' ></i></a>"
+        ]
+      },
+      {
+        "img": ["img/portfolio4.png", "img/portfolio4.png"],
+        "h4": ["響應式設計-電影串流", "RWD design for Movies Stream"],
+        "description": [
+          "<p>Responsive Web Design</p><a href='./Project4_netflix/' target='_blank'><i class='bx bx-link-external' ></i></a>",
+          "<p>Responsive Web Design</p><a href='./Project4_netflix/' target='_blank'><i class='bx bx-link-external' ></i></a>"
+        ]
+      },
+      {
+        "img": ["img/portfolio5.png", "img/portfolio5.png"],
+        "h4": ["響應式設計-社群媒體", "RWD design for Social Media"],
+        "description": [
+          "<p>Responsive Web Design</p><a href='./Project5_socialbook/' target='_blank'><i class='bx bx-link-external' ></i></a>",
+          "<p>Responsive Web Design</p><a href='./Project5_socialbook/' target='_blank'><i class='bx bx-link-external' ></i></a>"
+        ]
+      },
+      {
+        "img": ["img/portfolio6.png", "img/portfolio6.png"],
+        "h4": ["響應式設計-電商平台", "RWD design for E-commerce"],
+        "description": [
+          "<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>",
+          "<p>Responsive Web Design for E-commerce website </p><a href='./Project6_Ecommerce/' target='_blank'><i class='bx bx-link-external' ></i></a>"
+        ]
+      }
+    ]
+  },
+  "abouteContent": {
+    "title": ["關注 <span>我</span>", "About <span>me</span>"],
+    "description": [
+      "<p>我是Danny｜擁有豐富設計和資料分析能力的π型人才憑藉著深厚的設計實力和深入的數據分析專長，我能夠創造出引人注目且功能出眾的產品，也是我工作中的獨特優勢。</p><p>在過去的工作中，我經常利用趨勢軟體和數據分析工具來深入了解市場需求，並以此作為設計方向的依據。我相信，優秀的產品設計不僅能夠滿足客戶的期望，還能夠解決客戶面臨的實際問題。我期待著在新的挑戰中，繼續發揮我的設計和資料分析技能，為公司帶來更多價值。</p><a href='https://github.com/DannyTan8x' class='btn' target='_blank'>GitHub</a>",
+      "<p>I am Danny｜A π-shaped talent with rich design and data analysis capabilities. With my deep design strength and in-depth data analysis expertise, I am able to create eye-catching and functional products, which is also unique in my work. Advantage. </p><p>In my past work, I often used trend software and data analysis tools to gain an in-depth understanding of market needs and used this as a basis for design direction. I believe that excellent product design not only meets customer expectations, but also solves real problems faced by customers. I look forward to continuing to use my design and data analysis skills in new challenges to bring more value to the company. </p><a href='https://github.com/DannyTan8x' class='btn' target='_blank'>GitHub</a>"
+    ]
+  },
+  "certContent": {
+    "title": ["<span>認證</span>", "<span>Certification</span>"],
+    "boxItems": [
+      {
+        "imgLage": ["./Cert/cert_html_css.png", "./Cert/cert_html_css.png"],
+        "thumbnail": ["./Cert/1HTMLCSs.png", "./Cert/1HTMLCSs.png"],
+        "title": ["HTML_CSS 認證", "HTML_CSS Certification"]
+      },
+      {
+        "imgLage": ["./Cert/cert_jquery.png", "./Cert/cert_jquery.png"],
+        "thumbnail": ["./Cert/1jQuery.png", "./Cert/1jQuery.png"],
+        "title": ["jQuery 認證", "jQuery Certification"]
+      },
+      {
+        "imgLage": ["./Cert/cert_RWD.png", "./Cert/cert_RWD.png"],
+        "thumbnail": ["./Cert/1RWD.png", "./Cert/1RWD.png"],
+        "title": ["響應式網頁設計認證", "Responsive Web Design Certification"]
+      },
+      {
+        "imgLage": [
+          "./Cert/cert_javarscript.png",
+          "./Cert/cert_javarscript.png"
+        ],
+        "thumbnail": ["./Cert/1javascript.png", "./Cert/1javascript.png"],
+        "title": [
+          "JavaScript 必修篇 - 前端修練全攻略認證",
+          "JavaScript Certification"
+        ]
+      }
+    ]
+  }
 }
